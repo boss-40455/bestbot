@@ -1,4 +1,4 @@
-js module.exports = {
+module.exports = {
   config: {
     name: "up",
     aliases: ["up", "upt"],
