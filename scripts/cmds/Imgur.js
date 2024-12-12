@@ -1,48 +1,65 @@
 const axios = require("axios");
 
-module.exports.config = {
-  name: "imgur",
-  version: "6.9",
-  author: "GoatMart",
-  countDown: 5,
-  role: 0,
-  category: "media",
-  description: "convert image/video/gifs/audio etc. into Imgur link",
-  usages: "reply [image, video, audio, gifs]",
-  category: "tools",
-};
+module.exports = {
+  config: {
+    name: "imgur",
+    aliases: [],
+    version: "1.0",
+    author: "JISAN",
+    shortDescription: "Upload media to Imgur.",
+    longDescription: "Uploads an image or video (via reply) to Imgur and returns the public Imgur link.",
+    category: "media",
+    guide: "{p}imgur (reply to an image or video message)",
+  },
+  onStart: async function ({ api, event }) {
+    try {
+      // Check if the user replied to a message
+      if (!event.messageReply || !event.messageReply.attachments || event.messageReply.attachments.length === 0) {
+        return api.sendMessage(
+          "❌ Please reply to an image or video message to upload it to Imgur.",
+          event.threadID,
+          event.messageID
+        );
+      }
 
-module.exports.onStart = async function ({ api, event }) {
-  const url = event.messageReply?.attachments[0]?.url;
-  if (!url) {
-    return api.sendMessage(
-      "Please reply to an image, video, audio, gif etc.",
-      event.threadID,
-      event.messageID,
-    );
-  }
-  
-  try {
-    const baseApiUrl = 'https://g-v1.onrender.com';
-    
-    const uploadResponse = await axios.post(`${baseApiUrl}/v1/upload`, null, {
-      params: { url: url },
-    });
+      const attachment = event.messageReply.attachments[0];
+      const mediaUrl = attachment.url;
 
-    if (uploadResponse.status !== 200 || !uploadResponse.data.link) {
-      throw new Error('Failed to upload image.');
+      // Notify user
+      api.sendMessage("Uploading to Imgur... Please wait.", event.threadID, event.messageID);
+
+      // Make the API request to Imgur
+      const response = await axios.post(
+        "https://api.imgur.com/3/upload",
+        { image: mediaUrl },
+        {
+          headers: {
+            Authorization: "Bearer edd3135472e670b475101491d1b0e489d319940f",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      const imgurData = response.data;
+      if (!imgurData || !imgurData.data || !imgurData.data.link) {
+        throw new Error("Failed to retrieve Imgur link.");
+      }
+
+      const imgurLink = imgurData.data.link;
+
+      // Send the Imgur link to the user
+      api.sendMessage(
+        `✅ Media uploaded successfully! Here's your Imgur link: ${imgurLink}`,
+        event.threadID,
+        event.messageID
+      );
+    } catch (error) {
+      console.error("Error uploading to Imgur:", error.message);
+      api.sendMessage(
+        `❌ Error uploading to Imgur: ${error.message}`,
+        event.threadID,
+        event.messageID
+      );
     }
-
-    const shortLink = uploadResponse.data.link;
-    
-    return api.sendMessage(shortLink, event.threadID, event.messageID);
-
-  } catch (error) {
-    console.error(error);
-    return api.sendMessage(
-      "Failed to convert image or video into link.",
-      event.threadID,
-      event.messageID,
-    );
-  }
+  },
 };
