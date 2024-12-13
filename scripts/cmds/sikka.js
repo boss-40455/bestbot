@@ -1,4 +1,4 @@
-.Cmd install Sikka.js module.exports.config = {
+module.exports.config = {
 	name: "sikka",
 	version: "1.0.1",
 	role: 2,
