@@ -1,109 +1,128 @@
-,Cmd install pending.js  module.exports = {
-  config: {
-    name: "pending",
-    version: "1.0",
-    author: "Mahi",
-    countDown: 5,
-    role: 0,
-    shortDescription: {
-      vi: "",
-      en: ""
+[
+    {
+        "key": "dbln",
+        "value": "%7B%2261569758218363%22%3A%22WMwGGYIA%22%2C%2261569601177039%22%3A%22Ez5wsfqW%22%2C%22100084951026321%22%3A%22s5Xpkswt%22%2C%2261550265823903%22%3A%22lbnQbQGg%22%2C%2261569929944779%22%3A%22wojiciOr%22%2C%2261570345403919%22%3A%22Y6SDcxM3%22%2C%2261570066567444%22%3A%220fVtebLn%22%2C%2261570478361491%22%3A%22G7lBOeHB%22%2C%2261569854726492%22%3A%22I1mYJoNj%22%2C%22100022690020583%22%3A%22BiRzqMNm%22%2C%2261570137671176%22%3A%22gw1vYNcY%22%2C%2261569861118840%22%3A%22QCvO7qmT%22%2C%2261570050766043%22%3A%22GnsGEtqZ%22%2C%22100029241635913%22%3A%223hHBxXcL%22%2C%2261570069935820%22%3A%22Vm7blV0n%22%2C%2261569886121109%22%3A%22S7EBm9L6%22%2C%22100093025032488%22%3A%22b73hCIuS%22%2C%2261570407423940%22%3A%22s2xC4NGl%22%2C%2261570368815587%22%3A%226YnDy58L%22%2C%2261570461722412%22%3A%22FB0bFBTi%22%2C%2261570606074744%22%3A%22FTWF23bQ%22%2C%22100029053041992%22%3A%22ueype8mv%22%2C%2261570369716157%22%3A%22DQEiBYLc%22%2C%2261570839951652%22%3A%22fBylzpVg%22%2C%2261570617476109%22%3A%22VGOcw7Ri%22%2C%2261569877452511%22%3A%22kNgnZV8Z%22%2C%2261570363267896%22%3A%22EovuHKGb%22%7D",
+        "domain": "facebook.com",
+        "path": "/login/device-based/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
     },
-    longDescription: {
-      vi: "",
-      en: ""
+    {
+        "key": "datr",
+        "value": "h8VJZ0t3jdoJpj9lmlHsCMnh",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
     },
-    category: "Goat-alAuthor"
-  },
-
-  langs: {
-    en: {
-      invaildNumber: "%1 is not a valid number",
-      cancelSuccess: "Successfully refused %1 thread(s)!",
-      approveSuccess: "🎉 Successfully approved %1 thread(s)! 🎉",
-      cantGetPendingList: "Unable to fetch the pending list!",
-      returnListPending: "»「PENDING」«❮ Total threads awaiting approval: %1 ❯\n\n%2",
-      returnListClean: "「PENDING」There are no threads in the pending list."
+    {
+        "key": "sb",
+        "value": "h8VJZ2LwnB4mgWeOiNGFJtZ5",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "ps_l",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "ps_n",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "oo",
+        "value": "v1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "vpd",
+        "value": "v1%3B664x360x2",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "wd",
+        "value": "360x664",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "c_user",
+        "value": "61570363267896",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "fr",
+        "value": "00D7b6kLNRLFNlC8a.AWXBUoQv8Hy2HV4X2CGdw2dx4Ek.BnWX2s..AAA.0.0.BnXbvH.AWUIyJIj39c",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "xs",
+        "value": "19%3A9kuAKBquESDD9A%3A2%3A1734196168%3A-1%3A-1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "locale",
+        "value": "en_US",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.756Z",
+        "lastAccessed": "2024-12-14T19:18:18.756Z"
+    },
+    {
+        "key": "fbl_st",
+        "value": "100624959%3BT%3A28903398",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.757Z",
+        "lastAccessed": "2024-12-14T19:18:18.757Z"
+    },
+    {
+        "key": "wl_cbv",
+        "value": "v2%3Bclient_version%3A2696%3Btimestamp%3A1734203894",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2024-12-14T19:18:18.757Z",
+        "lastAccessed": "2024-12-14T19:18:18.757Z"
     }
-  },
-
-  onReply: async function ({ api, event, Reply, getLang, commandName, prefix }) {
-    if (String(event.senderID) !== String(Reply.author)) return;
-
-    const { body, threadID, messageID } = event;
-    let count = 0;
-
-    if (isNaN(body) && (body.indexOf("c") == 0 || body.indexOf("cancel") == 0)) {
-      const index = body.slice(1).split(/\s+/);
-      for (const singleIndex of index) {
-        if (isNaN(singleIndex) || singleIndex <= 0 || singleIndex > Reply.pending.length) {
-          return api.sendMessage(getLang("invaildNumber", singleIndex), threadID, messageID);
-        }
-        api.removeUserFromGroup(api.getCurrentUserID(), Reply.pending[singleIndex - 1].threadID);
-        count++;
-      }
-      return api.sendMessage(getLang("cancelSuccess", count), threadID, messageID);
-    } else {
-      const index = body.split(/\s+/);
-      for (const singleIndex of index) {
-        if (isNaN(singleIndex) || singleIndex <= 0 || singleIndex > Reply.pending.length) {
-          return api.sendMessage(getLang("invaildNumber", singleIndex), threadID, messageID);
-        }
-
-        const approvedThread = Reply.pending[singleIndex - 1];
-        const approvalMessage = `🎊 *Congratulations!* 🎊\nYour thread *"${approvedThread.name}"𝘼𝘿𝙈𝙄𝙉 𝘼𝙋𝙋𝙍𝙊𝙑𝙀 𝙏𝙃𝘼 𝙂𝘾 ✅ 𝘼𝘿𝙈𝙄𝙉:𝙈𝙍-𝙅𝙄𝙎𝘼𝙉             
-
-𝙃𝙚𝙧𝙚 𝙞𝙨 𝙢𝙮 𝙤𝙬𝙣𝙚𝙧 𝙞𝙙 𝙇𝙞𝙣𝙠:https://www.facebook.com/XAIKO.JISAN?mibextid=ZbWKwL
-
-•𝗕𝗼𝘁 ,𝗵𝗲𝗹𝗽 𝘀𝗲𝗲 𝘆𝗼𝘂 𝗮𝗹𝗹 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀
-
-•𝗛𝗮𝘃𝗲 𝗮 𝗻𝗶𝗰𝗲 𝗺𝗼𝗿𝗻𝗶𝗻𝗴 💋
-🩵 𝙂𝙍𝙊𝙐𝙋 𝙉𝘼𝙈𝙀:\n`;
-
-        // Send the approval message with the GIF
-        api.sendMessage(
-          {
-            body: approvalMessage,
-            attachment: await global.utils.getStreamFromURL("https://i.imgur.com/HEyjxNW.jpeg")
-          },
-          approvedThread.threadID
-        );
-
-        count++;
-      }
-      return api.sendMessage(getLang("approveSuccess", count), threadID, messageID);
-    }
-  },
-
-  onStart: async function ({ api, event, getLang, commandName }) {
-    const { threadID, messageID } = event;
-
-    let msg = "",
-      index = 1;
-
-    try {
-      const spam = (await api.getThreadList(100, null, ["OTHER"])) || [];
-      const pending = (await api.getThreadList(100, null, ["PENDING"])) || [];
-      const list = [...spam, ...pending].filter(group => group.isSubscribed && group.isGroup);
-
-      for (const single of list) {
-        msg += `${index++}/ ${single.name} (${single.threadID})\n`;
-      }
-
-      if (list.length > 0) {
-        return api.sendMessage(getLang("returnListPending", list.length, msg), threadID, (err, info) => {
-          global.GoatBot.onReply.set(info.messageID, {
-            commandName,
-            messageID: info.messageID,
-            author: event.senderID,
-            pending: list
-          });
-        }, messageID);
-      } else {
-        return api.sendMessage(getLang("returnListClean"), threadID, messageID);
-      }
-    } catch (e) {
-      return api.sendMessage(getLang("cantGetPendingList"), threadID, messageID);
-    }
-  }
-};
+]
