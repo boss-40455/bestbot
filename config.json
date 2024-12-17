@@ -40,11 +40,11 @@
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [
-      "100072378825674"
+      "100091084426140"
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "➳ᴹᴿ᭄𝙹𝙸𝚂𝙰𝙽✭𝙱𝙾𝚃 𝙱𝙾𝚇_꧂",
+  "nickNameBot": "—͟͟͞͞𖣘𝚇𝙰𝙸𝙺𝙾 𝙹𝙰𝙳𝙸𝙳 𝙱𝙾𝚃𓆩༢࿔ྀુ",
   "prefix": ",",
   "ArYanapi": "https://aryan-rest-api.onrender.com",
   "api": "",
