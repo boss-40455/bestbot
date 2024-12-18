@@ -5,7 +5,7 @@ module.exports = {
 	config: {
 		name: "prefix",
 		version: "1.4",
-		author: "jisan",//editing by ArYAN
+		author: "jadid",//editing by ArYAN
 		countDown: 5,
 		role: 0,
 		description: "Thay đổi dấu lệnh của bot trong box chat của bạn hoặc cả hệ thống bot (chỉ admin bot)",
@@ -24,7 +24,7 @@ module.exports = {
 			confirmThisThread: "Please react to this message to confirm change prefix in your box chat",
 			successGlobal: "Changed prefix of system bot to: %1",
 			successThisThread: "Changed prefix in your box chat to: %1",
-			myPrefix: "✨ 𝙅𝙄𝙎𝘼𝙉 𝘽𝙊𝙏 𝘽𝙊𝙓 ✨\n\n❊⊰⊰ 𝙅𝙄𝙎𝘼𝙉-𝐁𝐎𝐓...𝟭𝟬𝟬%⊱⊱❊\⫸ 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐟𝐮𝐥𝐥 ⫷\n\n❐ 🄱🄾🅃 𝐏𝐫𝐞𝐟𝐢𝐱: [❊⊰ . ⊱❊]\n❐𝐄𝐱𝐚𝐦𝐩𝐥𝐞: .𝐡𝐞𝐥𝐩\n───────────•••\n│👤𝐎𝐰𝐧𝐞𝐫:【 𝙈𝙍 𝙅𝙄𝙎𝘼𝙉 】\n│⚠𝐃𝐨𝐧'𝐭 𝐊𝐢𝐜𝐤 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭!\n│✅𝐔𝐬𝐞 .𝐡𝐞𝐥𝐩 𝐓𝐨 𝐒𝐞𝐞 𝐂𝐌𝐃?\n│💟𝐓𝐡𝐚𝐧𝐤𝐬 𝐆𝐂 𝐀𝐝𝐦𝐢𝐧 𝐅𝐨𝐫 𝐀𝐝𝐝!\n│❄𝐈 𝐇𝐚𝐯𝐞 𝐍𝐨 𝐒𝐩𝐚𝐦!"
+			myPrefix: "✨ 𝙅𝘼𝘿𝙄𝘿 ☯ 𝘽𝙊𝙏  ✨\n\n❊⊰⊰ 𝙅𝘼𝘿𝙄𝘿 -𝐁𝐎𝐓...𝟭𝟬𝟬%⊱⊱❊\⫸ 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐟𝐮𝐥𝐥 ⫷\n\n❐ 🄱🄾🅃 𝐏𝐫𝐞𝐟𝐢𝐱: in [❊⊰ , ⊱❊]\n❐𝐄𝐱𝐚𝐦𝐩𝐥𝐞: ,𝐡𝐞𝐥𝐩\n───────────•••\n│👤𝐎𝐰𝐧𝐞𝐫:【 𝙈𝙍-𝙅𝘼𝘿𝙄𝘿☯】\n│⚠𝐃𝐨𝐧'𝐭 𝐊𝐢𝐜𝐤 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭!\n│✅𝐔𝐬𝐞 .𝐡𝐞𝐥𝐩 𝐓𝐨 𝐒𝐞𝐞 𝐂𝐌𝐃?\n│💟𝐓𝐡𝐚𝐧𝐤𝐬 𝐆𝐂 𝐀𝐝𝐦𝐢𝐧 𝐅𝐨𝐫 𝐀𝐝𝐝!\n│❄𝐈 𝐇𝐚𝐯𝐞 𝐍𝐨 𝐒𝐩𝐚𝐦!"
 		}
 	},
 
