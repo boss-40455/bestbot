@@ -1,4 +1,4 @@
-,cmd install 💔t.js module.exports = {
+module.exports = {
     config: {
         name: "💔",
         version: "1.0",
