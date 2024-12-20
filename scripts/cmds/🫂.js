@@ -1,4 +1,4 @@
-module.exports = {
+,cmd install 🫂.js module.exports = {
  config: {
 	 name: "🫂",
 	 version: "1.0",
@@ -14,8 +14,8 @@ module.exports = {
  onChat: async function({ event, message, getLang }) {
  if (event.body && event.body.toLowerCase() === "🫂") {
  return message.reply({
- body: "     「𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥\n𝙅𝘼𝘿𝙄𝘿」",
- attachment: await global.utils.getStreamFromURL("https://drive.google.com/uc?id=17VPZHJ-VTswCQpBABYbdqeXrncGlrlit")
+ body: "     「সব ভেঙে যাবে কিন্তু বন্ধুত্ব ভাঙবে না পৃথিবীতে সবচেয়ে  সেরা বন্ধুত্ব ..!🥰😇🥀♥️\n\n\n𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥\n☆XAIKO☆\JADIDッ」",
+ attachment: await global.utils.getStreamFromURL("https://i.imgur.com/xPU2xzw.mp4")
  });
  }
  }
