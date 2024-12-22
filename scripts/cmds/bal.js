@@ -15,8 +15,8 @@ module.exports = {
  if (event.body && event.body.toLowerCase() === "bal") {
  return message.reply({
  body: "জান এত বাল বাল করো কেন বাল-!!😾🤙",
- attachment: await global.utils.getStreamFromURL("https://i.postimg.cc/brsP4XWb/b57d340eec9cf7395653c38088491ace3ab7673b-hq.gif")
+ attachment: await global.utils.getStreamFromURL("https://i.imgur.com/K77DxGN.mp4")
  });
  }
  }
-}
+  }
