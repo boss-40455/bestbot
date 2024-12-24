@@ -14,9 +14,9 @@ module.exports = {
  onChat: async function({ event, message, getLang }) {
  if (event.body && event.body.toLowerCase() === "🍋") {
  return message.reply({
- body: "     「এত দিন পর আমার ও GF হইলো-!!😩😘👻♥️\n\n\n𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥\n☆XAIKO☆\JADID」",
- attachment: await global.utils.getStreamFromURL(✅ Media uploaded successfully! Here's your Imgur link: https://i.imgur.com/MK8VwaG.mp4")
+ body: "     「১০০ বছর পর GF না পাওয়ার পর আমি -!!🙂😩🤞♥️\n\n\n𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥\n☆JADID☆\JADID」",
+ attachment: await global.utils.getStreamFromURL("https://i.imgur.com/MK8VwaG.mp4")
  });
  }
  }
-}
+	 }
