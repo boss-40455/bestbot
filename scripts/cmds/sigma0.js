@@ -46,7 +46,7 @@ module.exports = {
 
     if (senderID !== null) {
       message.reply({
-        body: '[SIGMA IS A NOT NAME BRO IT'S A BRAND OKAY ☠️💀]',
+        body: '[SIGMA IT'S NOT NAME BRO IT'S A BRAND 🤙🤞🤟]',
         attachment: await global.utils.getStreamFromURL(randomVideo),
       });
 
