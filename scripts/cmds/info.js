@@ -5,7 +5,7 @@ module.exports = {
 	config: {
 		name: "info",
 		version: "1.0",
-		author: "NTKhang",
+		author: "Jadid",
 		countDown: 20,
 		role: 0,
 		shortDescription: { vi: "", en: "" },
@@ -22,8 +22,8 @@ module.exports = {
 		const authorNumber = "+8801319039003";
 		const status = "Single";
 		const urls = [
-			"https://i.imgur.com/qAWz2me.jpeg", // Replace with your valid image URLs
-			"https://via.placeholder.com/600"
+			"https://i.imgur.com/CmTxzDu.jpeg", // Replace with your valid image URLs
+			"https://i.imgur.com/CmTxzDu.jpeg"
 		];
 		const link = urls[Math.floor(Math.random() * urls.length)];
 		const now = moment().tz("Asia/Jakarta");
