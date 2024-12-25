@@ -190,7 +190,316 @@ module.exports = {
                     imageUrl: "https://drive.google.com/uc?export=download&id=1MA1_270eyhBkMRF001wE2QWoq0_6EjpK"
                 },
                 {
-                    animeName: "Yu-Gi-Oh!",
+                       animeName: "The Twelve Kingdoms",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "Re:Creators",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "Isekai Cheat Magician",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "Cautious Hero: The Hero Is Overpowered but Overly Cautious",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "Arifureta: From Commonplace to World's Strongest",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "The Time I Got Reincarnated as a Slime",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "Ascendance of a Bookworm",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "Hai to Gensou no Grimgar",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "Knights & Magic",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "In Another World with My Smartphone",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "The Master of Ragnarok & Blesser of Einherjar",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "The Devil Is a Part-Timer!",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "Outbreak Company",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "The Saint's Magic Power Is Omnipotent",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "In Another World with My Absurd Skill",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+                   {
+                       animeName: "The Devil Is a Part-Timer!",
+                       imageUrl: "REPLACE_WITH_IMAGE_URL"
+                   },
+
+               ],
+            scifi: [
+                {
+                    animeName: "Cowboy Bebop",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Ghost in the Shell: Stand Alone Complex",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Neon Genesis Evangelion",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Steins;Gate",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Psycho-Pass",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Serial Experiments Lain",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Ergo Proxy",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Space Dandy",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Planetes",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Aldnoah.Zero",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Trigun",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Code Geass: Lelouch of the Rebellion",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Outlaw Star",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Noein: To Your Other Self",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Time of Eve (Eve no Jikan)",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Legend of the Galactic Heroes",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Last Exile",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Gankutsuou: The Count of Monte Cristo",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Knights of Sidonia",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Space Battleship Yamato 2199",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Terra Formars",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Akira",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Casshern Sins",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Dimension W",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Armitage III",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Appleseed",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Pale Cocoon",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Eureka Seven",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "The Big O",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "No. 6",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "ID: INVADED",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Blue Gender",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Freedom",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Battle Angel Alita (Gunnm)",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Robotics;Notes",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Higashi no Eden (Eden of the East)",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Solty Rei",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Voices of a Distant Star (Hoshi no Koe)",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Black Bullet",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Astra Lost in Space (Kanata no Astra)",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Captain Earth",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "The Irregular at Magic High School (Mahouka Koukou no Rettousei)",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Bubblegum Crisis",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Nausicaä of the Valley of the Wind",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Freedom",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Gantz",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Plastic Memories",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Blue Submarine No. 6",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Ajin: Demi-Human",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                {
+                    animeName: "Log Horizon",
+                    imageUrl: "REPLACE_WITH_IMAGE_URL"
+                },
+                // Add more scifi anime recommendations here
+            ],
+        };
+
+        const { lastRecommendation } = this;
+
+        if (args.length === 0) {
+            const genreList = Object.keys(animeRecommendations).join(', ');
+            message.reply(`Please type {prefix} anime genre\nAvailable genres: ${genreList}`);
+            return;
+        }
+
+        const genre = args[0].toLowerCase();
+
+        if (genre in animeRecommendations) {
+            const loadingMessage = await api.sendMessage("Random anime recommendation is loading. Please wait...", event.threadID);
+            const recommendations = animeRecommendations[genre];
+
+
+            let randomIndex;
+            do {
+                randomIndex = Math.floor(Math.random() * recommendations.length);
+            } while (lastRecommendation[genre] === randomIndex);
+
+            const recommendation = recommendations[randomIndex];
+            lastRecommendation[genre] = randomIndex; 
+
+            const imageStream = await global.utils.getStreamFromURL(recommendation.imageUrl);
+
+            const messageObject = {
+                body: `Based on the genre '${genre}', I recommend you to watch: ${recommendation.animeName}`,
+                attachment: imageStream,
+            };
+
+
+            await api.sendMessage(messageObject, event.threadID, event.messageID);
+
+
+            await api.unsendMessage(loadingMessage.messageID);
+        } else {
+            message.reply("Genre not found. Please choose from available genres: shonen, seinen, isekai, scifi.");
+        }
+    }
+};                  animeName: "Yu-Gi-Oh!",
                     imageUrl: "https://drive.google.com/uc?export=download&id=19g-LMWLAhWPNbbjXrzk22ai3qFen9QXt"
                 },
                 {
