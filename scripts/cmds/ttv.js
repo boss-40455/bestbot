@@ -4,7 +4,7 @@ const path = require("path");
 
 module.exports = {
   config: {
-    name: "tiktok",
+    name: "ttv",
     version: "2.0",
     author: "kshitiz",
     countDown: 20,
