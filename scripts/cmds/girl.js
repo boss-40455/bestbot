@@ -3,7 +3,7 @@ module.exports = {
                 name: "girl",
                 aliases: ["girl"],
                 version: "1.0",
-                author: "AceGun",
+                author: "DAD KILLAR",
                 countDown: 5,
                 role: 0,
                 shortDescription: "send you a girl photos",
@@ -363,4 +363,21 @@ module.exports = {
 "https://i.postimg.cc/bJr8KSR9/E9z-UZTPVIAMto-E0.jpg",
 "https://i.postimg.cc/1zJsCrDz/E9z-UZTSVIAAVW26.jpg",
 "https://i.postimg.cc/RFY99Cs5/E9z-UZTSVQAUPh-Yi.jpg",
-"https://i.postimg.cc/YqMkHP8S/
+"https://i.postimg.cc/YqMkHP8S/"https://i.postimg.cc/BZxsR3Ty/EK9-Aazd-U4-AAn-RWe.jpg",
+"https://i.postimg.cc/dV0Y7TbP/EK9-Aazj-VUAE0-GQ.jpg",
+"https://i.postimg.cc/9Q06XH9c/f-b-Mpjec-FRr-M-3-W.jpg",
+"https://i.postimg.cc/NFQnW3Yq/fxw-Wt-XHtl-Tr-Fh-Qyw.jpg",
+"https://i.postimg.cc/D05NFxyW/hbay-UWXCIHAJYx-WR.jpg",
+"https://i.postimg.cc/2StPV9dh/HQlt7u-z-AJJFo-e.jpg",
+"https://i.postimg.cc/9MdSgW6Y/ht-D3-Wi-JQM0md-Fc-Ig.jpg",
+"https://i.postimg.cc/L6CWbQbw/q1o-DN4-IN-Zd6-K5s7.jpg",
+"https://i.postimg.cc/1th2Kgjz/Vbn0-ZPWBu-CB05-j-J.jpg",
+"https://i.postimg.cc/J7Qvbzc1/zpbi-Yu-P1-WBTUrc.jpg",
+]
+
+let img = link[Math.floor(Math.random()*link.length)]
+message.send({
+        body: '「 Here is your Babe😻 」',attachment: await global.utils.getStreamFromURL(img)
+})
+}
+                }
