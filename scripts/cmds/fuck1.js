@@ -4,7 +4,7 @@ const fs = require("fs")
 
 module.exports = {
         config: {
-                name: "fuck",
+                name: "fuck1",
                 aliases: ["fuck"],
                 version: "1.0",
                 author: "milan-says",
