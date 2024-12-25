@@ -397,8 +397,9 @@ module.exports = {
                   imageUrl: "REPLACE_WITH_IMAGE_URL"
               },
               {
-                  animeName: "Texhnolyze",                  imageUrl: "REPLACE_WITH_IMAGE_URL"
-              },
+                  animeName: "Texhnolyze",                  
+                  imageUrl: "REPLACE_WITH_IMAGE_URL"
+              },                  
               {
                   animeName: "Akira",
                   imageUrl: "REPLACE_WITH_IMAGE_URL"
