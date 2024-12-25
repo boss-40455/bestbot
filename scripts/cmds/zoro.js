@@ -1,3 +1,0 @@
-[ 
-"https://i.imgur.com/tvyVobP.jpg"
-]
