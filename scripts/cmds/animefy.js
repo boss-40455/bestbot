@@ -1,47 +1,50 @@
-const axios = require('axios');//similar to art.js
-const fs = require('fs-extra');
+const axios = require("axios")
+const fs = require("fs");
 
 module.exports = {
-  config: {
-    name: "animefy",
-    aliases: [],
-    version: "1.0",
-    author: "kshitiz",
-    countDown: 2,
-    role: 0,
-    shortDescription: "convert pic into anime style",
-    longDescription: "convert pic into anime style",
-    category: "anime",
-    guide: "{pn} anime {on img reply}"
-  },
+        config: {
+                name: "animefy",
+                aliases: [],
+                author: "Who's Deku/kira", // hindi ito collab, ako kasi nag convert :>
+                version: "69",
+                cooldowns : 5,
+                role: 0,
+                shortDescription: {
+                        en: "Anime filter"
+                },
+                longDescription: {
+                        en: "Anime filter"
+                },
+                category: "utility",
+                guide: {
+                        en: "{p}{n} [reply to image or image url]"
+                }
+        },
 
-  onStart: async function ({ api, event, args }) {
-    const { threadID, messageID } = event;
-
-
-    const imageUrl = event.messageReply && event.messageReply.attachments[0].url ? event.messageReply.attachments[0].url : args.join(" ");
-
-    try {
-
-      const response = await axios.get(`https://animeify.shinoyama.repl.co/convert-to-anime?imageUrl=${encodeURIComponent(imageUrl)}`);
-      const image = response.data.urls[1];
-
-
-      const imgResponse = await axios.get(`https://www.drawever.com${image}`, { responseType: "arraybuffer" });
-      const img = Buffer.from(imgResponse.data, 'binary');
-
-
-      const pathie = __dirname + `/cache/animefy.jpg`;
-      fs.writeFileSync(pathie, img);
-
-
-      api.sendMessage({
-        body: "Here's your animefied image:",
-        attachment: fs.createReadStream(pathie)
-      }, threadID, () => fs.unlinkSync(pathie), messageID);
-
-    } catch (e) {
-      api.sendMessage(`Error occurred:\n\n${e}`, threadID, messageID);
+onStart: async function({ api, event, args }) {
+  const { threadID, messageID } = event;
+  if (event.type == "message_reply") {
+    var t = event.messageReply.attachments[0].url
+  } else {
+    var t = args.join(" ");
+  }
+  try {
+    api.sendMessage("⏳ | Creating Your Anime Imaginations...", threadID, messageID);
+    const r = await axios.get("https://free-api.ainz-sama101.repl.co/canvas/toanime?", {
+      params: {
+        url: encodeURI(t)
+      }
+    });
+    const result = r.data.result.image_data;
+    let ly = __dirname + "/cache/anime.png";
+    let ly1 = (await axios.get(result, {
+      responseType: "arraybuffer"
+    })).data;
+    fs.writeFileSync(ly, Buffer.from(ly1, "utf-8"));
+    return api.sendMessage({ attachment: fs.createReadStream(ly) }, threadID, () => fs.unlinkSync(ly), messageID)
+  } catch (e) {
+    console.log(e.message);
+    return api.sendMessage("Something went wrong.\n" + e.message, threadID, messageID)
     }
   }
 };
