@@ -22,7 +22,7 @@ module.exports = {
 
     const link = [
       "https://i.imgur.com/BgCvHts.mp4",// video credits xenoz (tiktok)
-         "https://i.imgur.com/JWvZNMc.mp4",
+      "https://i.imgur.com/JWvZNMc.mp4",
       "https://i.imgur.com/4nnAEE2.mp4",
       "https://i.imgur.com/GSy6Roa.mp4",
       "https://i.imgur.com/4x9E1KI.mp4",
