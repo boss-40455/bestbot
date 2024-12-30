@@ -30,7 +30,7 @@ module.exports = {
 						session2: "noon",
 						session3: "afternoon",
 						session4: "evening",
-						welcomeMessage: "WELCOME KAYO SA BUHAY KO ADMIN KU PALA NA KUPAL\nHUNG TAMADS\nPrefix is %1\nType %1help to see all commands\nmwa mwa kayo sakin\n",
+						welcomeMessage: "━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝙅𝘼𝘿𝙄𝘿-𝘽𝙊𝙏㊝ 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗙𝗨𝗟𝗟\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗕𝗢𝗧 𝗔𝗗𝗠𝗜𝗡:𝙓𝘼𝙄𝙆𝙊-𝙅𝘼𝘿𝙄𝘿\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞: https://www.facebook.com/C.E.O.NOBITA.2021?mibextid=ZbWKwL\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗪𝗛𝗔𝗧𝗦 𝗔𝗣𝗣: wa.me/+8801319039003\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠: t.me/𝙊𝘿'𝙓 𝙅𝘼𝘿𝙄𝘿\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━ ",
 						multiple1: "you",
 						multiple2: "you guys",
 						defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}.\nHave a nice {session} 😊\nCurrent date and time: {dateTime}.\nYou are the {position} member in this group.\nTotal members: {membersCount}.\nTotal admins: {adminsCount}.`
@@ -85,7 +85,7 @@ module.exports = {
 						}
 
 						// Fixed background image URL
-						const background = "https://cdn.popcat.xyz/welcome-bg.png";
+						const background = "https://i.imgur.com/zDNIcUc.jpeg";
 
 						// Function to get session name
 						const getSessionName = () => {
