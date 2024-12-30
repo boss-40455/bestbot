@@ -17,12 +17,12 @@ module.exports = {
     const senderID = event.senderID;
 
     const loadingMessage = await message.reply({
-      body: "Loading JACK video... Please wait! 😎",
+      body: "Loading  JACK video... Please wait! 😎",
     });
 
     const link = [
       "https://i.imgur.com/tRVLXIo.mp4",// video credits xenoz (tiktok)
-      "https://i.imgur.com/gkE9RId.mp4",
+         "https://i.imgur.com/gkE9RId.mp4",
       "https://i.imgur.com/kBF5h0x.mp4",
       "https://i.imgur.com/4LFkSL2.mp4",
       "https://i.imgur.com/LftQURc.mp4",
@@ -46,7 +46,7 @@ module.exports = {
 
     if (senderID !== null) {
       message.reply({
-        body: '[I'M JACK THIS FATHER OF COOKROS 😤😎🤠] ',
+        body: '[I'M JACK FATHER OF COOKROS!!-🫰🤠] ',
         attachment: await global.utils.getStreamFromURL(randomVideo),
       });
 
