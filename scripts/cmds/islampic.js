@@ -1,4 +1,4 @@
-.Cmd install islamik-pic.js  module.exports = {
+module.exports = {
   config: {
     name: "islampic",
     aliases: ["lm10"],
@@ -8,7 +8,7 @@
     role: 0,
     shortDescription: "send you pic of islamik pic",
     longDescription: "",
-    category: "JISAN",
+    category: "Islam",
     guide: "{pn}"
   },
 
