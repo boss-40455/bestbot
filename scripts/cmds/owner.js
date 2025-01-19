@@ -24,7 +24,7 @@ config: {
       nick: '𝐗𝐀𝐈𝐊𝐎💀'
     };
 
-    const bold = 'https://i.imgur.com/DDO686J.mp4'; 
+    const bold = 'https://i.imgur.com/o36KBzm.mp4'; 
     const tmpFolderPath = path.join(__dirname, 'tmp');
 
     if (!fs.existsSync(tmpFolderPath)) {
