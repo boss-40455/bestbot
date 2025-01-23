@@ -1,6 +1,6 @@
-<img src="https://i.imgur.com/bmGbzxy.jpeg" alt="banner">
-<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> 𝙅𝘼𝘿𝙄𝘿-𝙓-𝗕𝗢𝗧 
-𝙐𝙎𝙀 𝙈𝙔  𝗠𝗘𝗦𝗦𝗘𝗡𝗚𝗘𝗥 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧</h1>
+<img src="https://i.imgur.com/nzZeGCC.jpeg" alt="banner">
+<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> 𝙅𝙄𝙎𝘼𝙉-𝗕𝗢𝗧 
+JISAN  𝗠𝗘𝗦𝗦𝗘𝗡𝗚𝗘𝗥 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧</h1>
 <!-- Github README -->
 
 <p align="center"><img src="https://img.shields.io/badge/I Am %20BANGLADESHI- NOOB PROGRAMMER-green?colorA=%23ff0000&colorB=%23017e40&style=flat-square">
@@ -19,7 +19,7 @@
 
 
 <h3><b><i>🏆 Github Statistics :</i></b></h3>
-<a href="https://github.com/sagorislam00"><img width=550 src="https://github-profile-trophy.vercel.app/?username=𝐗𝐀𝐈𝐊𝐎- 𝙅𝘼𝘿𝙄𝘿&theme=dracula&no-frame=true&title=Followers,Stars,Commit,Repository,Issues"/></a>
+<a href="https://github.com/sagorislam00"><img width=550 src="https://github-profile-trophy.vercel.app/?username=𝐗𝐀𝐈𝐊𝐎- 𝐉𝐈𝐒𝐀𝐍&theme=dracula&no-frame=true&title=Followers,Stars,Commit,Repository,Issues"/></a>
 
 </p>
 <p align="center"> 
@@ -33,7 +33,7 @@
 
 <img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
 
-- ➪ 𝗡𝗔𝗠𝗘      : 𝙓𝘼𝙄𝙆𝙊-𝙅𝘼𝘿𝙄𝘿 
+- ➪ 𝗡𝗔𝗠𝗘      : 𝙈𝙍 𝙅𝙄𝙎𝘼𝙉 𝙃𝘼𝙎𝙀𝙉
 
 <img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
 
@@ -49,11 +49,11 @@
 
 <img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
 
-- ➪ 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 :- [𝙓𝘼𝙄𝙆𝙊-𝙅𝘼𝘿𝙄𝘿 ](https://www.facebook.com/C.E.O.NOBITA.2021?mibextid=ZbWKwL)
+- ➪ 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 :- [𝐌-𝐑 𝐉𝐈𝐒𝐀𝐍](https://www.facebook.com/XAIKO.JISAN?mibextid=ZbWKwL)
 
 <img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
 
-- ➪ 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 :- [𝙓𝘼𝙄𝙆𝙊-𝙅𝘼𝘿𝙄𝘿  ](https://www.instagram.com/xaiko.jisan?igsh=YzljYTk1ODg3Zg==)
+- ➪ 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 :- [𝐌-𝐑 𝐉𝐈𝐒𝐀𝐍 ](https://www.instagram.com/xaiko.jisan?igsh=YzljYTk1ODg3Zg==)
 
 <img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
 
@@ -61,7 +61,7 @@
 <a href="https://github.com/BAYJID-901"><img align="left" title="Github" alt="Github" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" /></a>
 <a href="https://fb.com/Xsagorxnxx"><img align="left" title="Facebook" alt="Facebook" width="30px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" /></a>
 <a href="https://www.instagram.com/11sagor_islam"><img align="left" title="Inst<img src="https://i.imgur.com/po0KGPY.jpeg" alt="banner">
-<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> 𝙅𝘼𝘿𝙄𝘿-𝙓-𝗕𝗢𝗧
+<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> 𝙅𝙄𝙎𝘼𝙉-𝗕𝗢𝗧 
 JISAN  𝗠𝗘𝗦𝗦𝗘𝗡𝗚𝗘𝗥 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧</h1>
 <!-- Github README -->
 
@@ -124,3 +124,4 @@ JISAN  𝗠𝗘𝗦𝗦𝗘𝗡𝗚𝗘𝗥 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧</h1>
 <a href="https://fb.com/Xsagorxnxx"><img align="left" title="Facebook" alt="Facebook" width="30px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" /></a>
 <a href="https://www.instagram.com/11sagor_islam"><img align="left" title="Instagram" alt="Instagram" width="30px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" /></a>
 agram" alt="Instagram" width="30px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" /></a>
+
