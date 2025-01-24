@@ -2,7 +2,7 @@ module.exports = {
     config: {
         name: "oii",
         version: "1.0",
-        author: "Jadid", //** original author fb I'd : https://C.E.O.NOBITA.2021 **//
+        author: "MR-JISAN", //** original author fb I'd : https://XAIKO.JISAN **//
         countDown: 5,
         role: 0,
         shortDescription: "No Prefix",
@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "oii") return message.reply("শুনা কি হইছে বলো আমাকে আমি আছি তো-!!🤭🤭");
+    if (event.body && event.body.toLowerCase() == "oii") return message.reply("Oii মানে 😾 আমি তোর বড় হই সিরিয়ার দিয়ে কথা বল 🤠");
 }
 };
