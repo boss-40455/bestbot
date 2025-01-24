@@ -1,14 +1,14 @@
- module.exports = {
+module.exports = {
   config: {
     name: "anisad",
     version: "1.0",
-    author: "Jadid",
+    author: "Jisan",
     countDown: 20,
     role: 0,
-    shortDescription: "get anime sad video",
+    shortDescription: "get animesad video",
     longDescription: "get random animesad video",
     category: "anime",
-    guide: "{pn}",
+    guide: "{pn} animesadvdo",
   },
 
   sentVideos: [],
@@ -17,34 +17,47 @@
     const senderID = event.senderID;
 
     const loadingMessage = await message.reply({
-      body: "Loading  anime sad video... Please wait! 😓",
+      body: "𝗟𝗼𝗮𝗱𝗶𝗻𝗴 𝗔𝗻𝗶𝗺𝗲 𝗦𝗮𝗱 𝗩𝗶𝗱𝗲𝗼 ❤️‍🩹💔",
     });
 
     const link = [
-        "https://drive.google.com/uc?id=16KeE4J7L2Pd8cCKIBvlwEPP07A92b-eb",
-    "https://drive.google.com/uc?id=16MhNPi_H0-tEe5PQrrqkx_l7SrC_l0kd",
-    "https://drive.google.com/uc?id=15w4cvYmKrCW2Hul2AcvPEk5S4b-CH3EE",
-    "https://drive.google.com/uc?id=16Xa6thSHdEGCiypaetbAEqVCwEAzFnKX",
-    "https://drive.google.com/uc?id=16BnRPvKQd7gd3YLR_rB9QNZymotMqHu7",
-    "https://drive.google.com/uc?id=15fDe2735O50z-3G4yQ5tDT9J873x5izm",
-    "https://drive.google.com/uc?id=16HgiGU7_Cdh8NtpsKi92dTJmALJCV8jD",
-    "https://drive.google.com/uc?id=16KTSrInqvioGnT7RrAskjHYqz8R6RgNY",
-    "https://drive.google.com/uc?id=162yWrNRRTeN4tFEjQEtsR4p-4gWbTFaS",
-    "https://drive.google.com/uc?id=16-q768c6nXstZEjQhWa1pZUPL2Xpjwo9",
-    "https://drive.google.com/uc?id=15bfkP01mTzXutgP_0Z1iyud7SXqq-jOt",
-    "https://drive.google.com/uc?id=15WnvdFOQIhKQ1nlZgsABXaf6Q2nQexGW",
-    "https://drive.google.com/uc?id=16GTgYVSIDduUs4VTxadIzPPyp9KA_102",
-    "https://drive.google.com/uc?id=15Y2GnA-Kcox8Mw6jioxHc1G1yP4pihnC",
-    "https://drive.google.com/uc?id=16-qsG6oldtJiGq11Q3bFxKzuZJRFnoPT",
-    "https://drive.google.com/uc?id=15W8ETDBXrn_JvealPwPFQ2CjvZp437-g",
-    "https://drive.google.com/uc?id=15StZMKfsTdAhhECdKjS6FUFwG_OIHa7W",
-    "https://drive.google.com/uc?id=16lOXxs-Z9u-mxttFnwWzdUHvrP55aHnZ",
-    "https://drive.google.com/uc?id=162Qn-pcnc9iijg5dv59S9DTTQOofL4Fy",
-    "https://drive.google.com/uc?id=1680rf1wQ2TrRuSLHtTwFC7GYctJAnHaX",
-    "https://drive.google.com/uc?id=16-XtMXpa4r1iFJTBS2N68ARMuDH2IWpG",
-    "https://drive.google.com/uc?id=15bO3lguAxsMZPvKkcvlsM6ObXOfJMz79",
-
-];
+      "https://i.imgur.com/KYQVypn.mp4",// video credits xenoz (youtube)
+      "https://i.imgur.com/08ybSnM.mp4",
+      "https://i.imgur.com/jUzLyGB.mp4",
+      "https://i.imgur.com/1t1niaf.mp4",
+      "https://i.imgur.com/NP1IL0H.mp4",
+      "https://i.imgur.com/6FzFvXx.mp4",
+      "https://i.imgur.com/TrowcZE.mp4",
+      "https://i.imgur.com/7tnwruc.mp4",
+      "https://i.imgur.com/iihjqy3.mp4",
+      "https://i.imgur.com/HRQxLDB.mp4",
+      "https://i.imgur.com/s1uzgjk.mp4",
+      "https://i.imgur.com/WCJdp9h.mp4",
+      "https://i.imgur.com/wew7RyE.mp4",
+      "https://i.imgur.com/fT2O3IJ.mp4",
+      "https://i.imgur.com/aA2AXwq.mp4",
+      "https://i.imgur.com/NYNaIfj.mp4",
+      "https://i.imgur.com/KQlpUfs.mp4",
+      "https://i.imgur.com/QFgGWZq.mp4",
+      "https://i.imgur.com/OriHUQN.mp4",
+      "https://i.imgur.com/uMOE7Xi.mp4",
+      "https://i.imgur.com/cfPJZU0.mp4",
+      "https://i.imgur.com/mzhgLoP.mp4",
+      "https://i.imgur.com/NCxfbwZ.mp4",
+      "https://i.imgur.com/onVoQpN.mp4",
+      "https://i.imgur.com/SK0Z27l.mp4",
+      "https://i.imgur.com/b1TgMoa.mp4",
+      "https://i.imgur.com/x7ZB7Tp.mp4",
+      "https://i.imgur.com/Z3KKoUD.mp4",
+      "https://i.imgur.com/JSWk1ta.mp4",
+      "https://i.imgur.com/Ki58Yx7.mp4",
+      "https://i.imgur.com/aaCwOFN.mp4",
+      "https://i.imgur.com/aouUDdm.mp4",              
+"https://i.imgur.com/z8ORjet.mp4",
+"https://i.imgur.com/HliQ0p1.mp4",
+"https://i.imgur.com/BdZGQqz.mp4",
+      // Add more video links here
+    ];
 
     const availableVideos = link.filter(video => !this.sentVideos.includes(video));
 
@@ -59,7 +72,7 @@
 
     if (senderID !== null) {
       message.reply({
-        body: '[𝗔𝗻𝗶𝗺𝗲 𝘀𝗮𝗱 😔] ',
+        body: '𝗪𝗮𝘁𝗰𝗵 𝗧𝗵𝗮 𝗔𝗻𝗶𝗺𝗲 𝗦𝗮𝗱 𝗕𝗿𝗼𝗸𝗲𝗻 𝗩𝗶𝗱𝗲𝗼 🥹🫀❤️‍🩹',
         attachment: await global.utils.getStreamFromURL(randomVideo),
       });
 
