@@ -1,14 +1,14 @@
 module.exports = {
   config: {
-    name: "gojovid",
+    name: "gozovid",
     version: "1.0",
-    author: "Jadid",
+    author: "MR-JISAN",
     countDown: 20,
     role: 0,
-    shortDescription: "get gojo video",
-    longDescription: "get random gojo video",
+    shortDescription: "get gozo video",
+    longDescription: "get random gozo video",
     category: "anime",
-    guide: "{pn}",
+    guide: "{pn} gozovidvdo",
   },
 
   sentVideos: [],
@@ -17,69 +17,47 @@ module.exports = {
     const senderID = event.senderID;
 
     const loadingMessage = await message.reply({
-      body: "𝗟𝗢𝗔𝗗𝗜𝗡𝗚 𝗥𝗔𝗡𝗗𝗢𝗠 𝗚𝗢𝗝𝗢 𝗩𝗜𝗗𝗘𝗢.....𝗣𝗟𝗘𝗔𝗦𝗘 𝗪𝗔𝗜𝗧🥰",
+      body: "𝗟𝗼𝗮𝗱𝗶𝗻𝗴 𝗥𝗮𝗻𝗱𝗼𝗺 𝗚𝗼𝗷𝗼 𝘃𝗶𝗱𝗲𝗼... 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁! ⏳",
     });
 
     const link = [
-      "https://i.imgur.com/KEMLTVA.mp4",// video credits xaiko-jadid (tiktok)
-         "https://i.imgur.com/THEpgaq.mp4",
-      "https://i.imgur.com/jEgidhe.mp4",
-      "https://i.imgur.com/UJJM3wy.mp4",
-      "https://i.imgur.com/fHpspMq.mp4",
-      "https://i.imgur.com/VOfSwDM.mp4",
-      "https://i.imgur.com/4RgSbA9.mp4",
-      "https://i.imgur.com/aE1L7Ff.mp4",
-      "https://i.imgur.com/qglW4X2.mp4",
-
-"https://i.imgur.com/r0wb0no.mp4",
-
-"https://i.imgur.com/2myFkMm.mp4",
-
-"https://i.imgur.com/TwxBlNf.mp4",
-
-"https://i.imgur.com/fnMH3nV.mp4",
-
-"https://i.imgur.com/kSxsvLy.mp4",
-
-"https://i.imgur.com/jMia38Y.mp4",
-
-"https://i.imgur.com/nwdl5V0.mp4",
-
-"https://i.imgur.com/LMiDitG.mp4",
-
-"https://i.imgur.com/6Y5GpNL.mp4",
-
-"https://i.imgur.com/iXGvV1P.mp4",
-
-"https://i.imgur.com/3QPs5zm.mp4",
-
-"https://i.imgur.com/TMX9Su2.mp4",
-
-"https://i.imgur.com/TMX9Su2.mp4",
-
-"https://i.imgur.com/Dig5WZL.mp4",
-
-"https://i.imgur.com/W48CRoY.mp4",
-
-"https://i.imgur.com/5HJmV4q.mp4",
-
-"https://i.imgur.com/Crlcn4j.mp4",
-
-"https://i.imgur.com/bghFXyO.mp4",
-
-"https://i.imgur.com/RdZWyvb.mp4",
-
-"https://i.imgur.com/gHD2DVN.mp4",
-
-"https://i.imgur.com/PhLBUtI.mp4",
-
-"https://i.imgur.com/bHDxh4D.mp4",
-
-"https://i.imgur.com/1NR92Qz.mp4",
-
-"https://i.imgur.com/F5mVPSV.mp4",
-
-"https://i.imgur.com/QyipOt1.mp4",// Add more video links here
+      "https://i.imgur.com/WZxiu40.mp4",// video credits xenoz (youtube)
+      "https://i.imgur.com/iScktN8.mp4",
+      "https://i.imgur.com/yuUGsm8.mp4",
+      "https://i.imgur.com/tC4CGDR.mp4",
+      "https://i.imgur.com/PoyaY3n.mp4",
+      "https://i.imgur.com/MH5K184.mp4",
+      "https://i.imgur.com/w2U1s8y.mp4",
+      "https://i.imgur.com/budVFto.mp4",
+      "https://i.imgur.com/AaCW0Ut.mp4",
+      "https://i.imgur.com/72rYTVx.mp4",
+      "https://i.imgur.com/NolDscd.mp4",
+      "https://i.imgur.com/Rfj7234.mp4",
+      "https://i.imgur.com/hWfxtLC.mp4",
+      "https://i.imgur.com/U5h3miE.mp4",
+      "https://i.imgur.com/we3OnZC.mp4",
+      "https://i.imgur.com/ptZE3cA.mp4",
+      "https://i.imgur.com/2adTPjf.mp4",
+      "https://i.imgur.com/eYTdUED.mp4",
+      "https://i.imgur.com/tGjlKL1.mp4",
+      "https://i.imgur.com/NugcgZc.mp4",
+      "https://i.imgur.com/vzFRimn.mp4",
+      "https://i.imgur.com/RjzOqab.mp4",
+      "https://i.imgur.com/OWaWK0u.mp4",
+      "https://i.imgur.com/xiLfjKc.mp4",
+      "https://i.imgur.com/Ff6BSmM.mp4",
+      "https://i.imgur.com/gMGkbWl.mp4",
+      "https://i.imgur.com/cHxlXgi.mp4",
+      "https://i.imgur.com/ZNX9mat.mp4",
+      "https://i.imgur.com/yIYuURx.mp4",
+      "https://i.imgur.com/JJZv19y.mp4",
+      "https://i.imgur.com/FldshPX.mp4",
+      "https://i.imgur.com/kje5p9P.mp4",              
+"https://i.imgur.com/ozDlHVa.mp4",
+"https://i.imgur.com/oLZ0l8g.mp4",
+"https://i.imgur.com/K3uIYhU.mp4",
+"https://i.imgur.com/KmgtnZN.mp4",
+      // Add more video links here
     ];
 
     const availableVideos = link.filter(video => !this.sentVideos.includes(video));
@@ -95,7 +73,7 @@ module.exports = {
 
     if (senderID !== null) {
       message.reply({
-        body: '[🥰 GOJO VIDEO🥰] ',
+        body: '𝗣𝗢𝗪𝗘𝗥 𝗢𝗙 𝗚𝗢𝗭𝗢...🔥😎🤙',
         attachment: await global.utils.getStreamFromURL(randomVideo),
       });
 
