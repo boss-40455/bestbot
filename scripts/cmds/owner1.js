@@ -45,7 +45,7 @@ case "prefix2":
           await api.setMessageReaction("🪐", event.messageID, event.threadID, api);
   case "owner":
 message.reply({
-body: "———»ADMIN BOT«———\n❯ Bot Name: ➳ᴹᴿ᭄𝐉𝐀𝐃𝐈𝐃-𝐗-𝐁𝐎𝐓㊗\n❯ Bot Owner: 𝐗𝐀𝐈𝐊𝐎-𝐉𝐀𝐃𝐈𝐃☠︎︎\n❯ Age: 16\n❯ Gender: Male\n❯ Facebook: https://www.facebook.com/C.E.O.NOBITA.2021\n❯ Total Group: UNKNOWN\n❯ Total Users: UNKNOWN\n❯ Bot Prefix: ,\n❯ Today is: Monday,February 5, 2024 3:33 PM\n❯ Thanks for using 𝐉𝐀𝐃𝐈𝐃-𝐗-𝐁𝐎𝐓",
+body: "———»ADMIN BOT«———\n❯ Bot Name: ➳ᴹᴿ᭄𝙹𝙸𝚂𝙰𝙽✭𝙱𝙾𝚃 𝙱𝙾𝚇_꧂\n❯ Bot Owner: ➳ᴹᴿ᭄𝙹𝙸𝚂𝙰𝙽✭𝙱𝙾𝚃 𝙱𝙾𝚇_꧂\n❯ Age: 17\n❯ Gender: Male\n❯ Facebook: https://www.facebook.com/XAIKO.JISAN\n❯ Total Group: UNKNOWN\n❯ Total Users: UNKNOWN\n❯ Bot Prefix:. \n❯ Today is: UNKNOWN\n❯ Thanks for using ➳ᴹᴿ᭄𝙹𝙸𝚂𝙰𝙽✭𝙱𝙾𝚃 𝙱𝙾𝚇_꧂",
             attachment: fs.createReadStream("scripts/cmds/noprefix/goodnight.gif"),
           });
           await api.setMessageReaction("😙", event.messageID, event.threadID, api);
