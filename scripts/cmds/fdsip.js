@@ -2,7 +2,7 @@ module.exports = {
  config: {
    name: "fdsip",
    version: "1.0",
-   author: "Jadid",
+   author: "Mr-Jisan",
    countDown: 5,
    role: 0,
    shortDescription: "no prefix",
@@ -12,10 +12,10 @@ module.exports = {
   
  onStart: async function(){}, 
  onChat: async function({ event, message, getLang }) {
- if (event.body && event.body.toLowerCase() === "jisan") {
+ if (event.body && event.body.toLowerCase() === "jadid") {
  return message.reply({
- body: "জাদিদ বস এর BEST FRIEND হয়-!!🖤💋",
- attachment: await global.utils.getStreamFromURL("https://i.imgur.com/eHvW1Hf.jpeg")
+ body: "𝗝𝗶𝘀𝗮𝗻'𝘀 𝗯𝗲𝘀𝘁 𝗳𝗿𝗶𝗲𝗻𝗱..🫂🫀_______________________________জিসানের বেস্ট ফ্রেন্ড ❤️😌",
+ attachment: await global.utils.getStreamFromURL("https://i.imgur.com/j8s93Ze.jpeg")
  });
  }
  }
