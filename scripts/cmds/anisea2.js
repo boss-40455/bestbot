@@ -17,7 +17,7 @@ async function fetchTikTokVideos(query) {
 
 module.exports = {
   config: {
-    name: "anisearch",
+    name: "anisea2",
     aliases: ["animeedit", "tiktoksearch"],
     author: "Mahi--",
     version: "2.1",
