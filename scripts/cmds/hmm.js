@@ -1,8 +1,8 @@
 module.exports = {
     config: {
-        name: "hmm",
+        name: "hm",
         version: "1.0",
-        author: "Jadid", //** original author fb I'd : https://C.E.O.NOBITA.2021 **//
+        author: "MR-JISAN", //** original author fb I'd : https://XAIKO.JISAN **//
         countDown: 5,
         role: 0,
         shortDescription: "No Prefix",
@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "hmm") return message.reply("এতো হুম হুম করো কেন হে-!!😒");
+    if (event.body && event.body.toLowerCase() == "hm") return message.reply("এতো hm hm করিস কেন I Love u এখন বল Hm🤐🐥🙋‍♀️");
 }
 };
