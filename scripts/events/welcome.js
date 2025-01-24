@@ -10,30 +10,22 @@ module.exports = {
 		config: {
 				name: "welcome",
 				version: "1.7",
-				author: "BisayaXBalls",
+				author: "BisayaXBalls",//Language solve by Team Cxly
 				category: "events"
 		},
 
 		langs: {
 				vi: {
-						session1: "sáng",
-						session2: "trưa",
-						session3: "chiều",
-						session4: "tối",
-						welcomeMessage: "Cảm ơn bạn đã mời tôi vào nhóm!\nPrefix bot: %1\nĐể xem danh sách lệnh hãy nhập: %1help",
-						multiple1: "bạn",
-						multiple2: "các bạn",
-						defaultWelcomeMessage: "Xin chào {userName}.\nChào mừng bạn đến với {boxName}.\nChúc bạn có buổi {session} vui vẻ!\nCurrent date and time in Manila: {dateTime}\nBạn là thành viên thứ {position} của nhóm này.\nTổng số thành viên: {membersCount}\nTổng số quản trị viên: {adminsCount}"
-				},
+					},
 				en: {
 						session1: "morning",
 						session2: "noon",
 						session3: "afternoon",
 						session4: "evening",
-						welcomeMessage: "━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝙅𝘼𝘿𝙄𝘿-𝘽𝙊𝙏㊝ 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗙𝗨𝗟𝗟\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗕𝗢𝗧 𝗔𝗗𝗠𝗜𝗡:𝙓𝘼𝙄𝙆𝙊-𝙅𝘼𝘿𝙄𝘿\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞: https://www.facebook.com/C.E.O.NOBITA.2021?mibextid=ZbWKwL\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗪𝗛𝗔𝗧𝗦 𝗔𝗣𝗣: wa.me/+8801319039003\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠: t.me/𝙊𝘿'𝙓 𝙅𝘼𝘿𝙄𝘿\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━ ",
+						welcomeMessage: "━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝙅𝙄𝙎𝘼𝙉 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗙𝗨𝗟𝗟 😘✅\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗕𝗢𝗧 𝗔𝗗𝗠𝗜𝗡:𝙈𝙍-𝙅𝙄𝙎𝘼𝙉\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞:https://www.facebook.com/XAIKO.JISAN?mibextid=ZbWKwL \n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗪𝗛𝗔𝗧𝗦 𝗔𝗣𝗣: wa.me/+8801314470126\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠: @BDT-JISAN\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━",
 						multiple1: "you",
 						multiple2: "you guys",
-						defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}.\nHave a nice {session} 😊\nCurrent date and time: {dateTime}.\nYou are the {position} member in this group.\nTotal members: {membersCount}.\nTotal admins: {adminsCount}.`
+						defaultWelcomeMessage: `🍓𝐀𝐬𝐬𝐚𝐥𝐚𝐦𝐮 𝐀𝐥𝐚𝐢𝐤𝐮𝐦🍓\n\n 𝐇𝐞𝐥𝐥𝐨 {userName}.\n𝐖𝐞𝐥𝐜𝐨𝐦𝐞 {multiple} 𝐓𝐨 𝐓𝐡𝐚 𝐂𝐡𝐚𝐭 𝐠𝐫𝐨𝐮𝐩: {boxName}\n 𝐇𝐚𝐯𝐞 𝐚 𝐍𝐢𝐜𝐞 {session} \n\nCurrent date and time: {dateTime}.\nTotal members: {membersCount}.\nTotal admins: {adminsCount}.🎀 𝐢 𝐡𝐨𝐩𝐞 𝐲𝐨𝐮 𝐰𝐢𝐥𝐥 𝐟𝐨𝐥𝐥𝐨𝐰 𝐨𝐮𝐫 𝐚𝐥𝐥 𝐠𝐫𝐨𝐮𝐩 𝐫𝐮𝐥𝐞𝐬 ✨\n\n🐔🥀 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐯𝐞𝐫𝐲 𝐦𝐮𝐜𝐡 𝐟𝐨𝐫 𝐜𝐨𝐦𝐢𝐧𝐠 𝐭𝐨 𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩🩵🌟`
 				}
 		},
 
@@ -85,7 +77,7 @@ module.exports = {
 						}
 
 						// Fixed background image URL
-						const background = "https://i.imgur.com/zDNIcUc.jpeg";
+						const background = "https://imgur.com/a/IKzKzO2";
 
 						// Function to get session name
 						const getSessionName = () => {
@@ -146,3 +138,55 @@ module.exports = {
 				}, 1500);
 		}
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+											    
