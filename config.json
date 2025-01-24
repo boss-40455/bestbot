@@ -35,22 +35,22 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100091084426140"
+    "100072378825674"
   ],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [
-      "100091084426140"
+      "100072378825674"
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "➳ᴹᴿ᭄𝐉𝐀𝐃𝐈𝐃-𝐗-𝐁𝐎𝐓㊗",
-  "prefix": ",",
+  "nickNameBot": "➳ᴹᴿ᭄𝙹𝙸𝚂𝙰𝙽✭𝙱𝙾𝚃 𝙱𝙾𝚇_꧂",
+  "prefix": ".",
   "ArYanapi": "https://aryan-rest-api.onrender.com",
-  "api": "",
+  "mahi-apis": "https://mahi-apis.onrender.com",
   "api2": "",
   "api3": "",
-  "authorName": "ArYan 🤡",
+  "authorName": "𝗫𝗔𝗜𝗞𝗢-𝗝𝗜𝗦𝗔𝗡",
   "facebook2": "https://www.facebook.com/raj.vai.404",
   "facebook": "https://www.facebook.com/ArYan.com.404",
   "email": "adriyanaryan@yahoo.com",
