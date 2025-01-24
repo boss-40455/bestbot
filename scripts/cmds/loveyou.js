@@ -14,7 +14,7 @@ module.exports = {
  onChat: async function({ event, message, getLang }) {
  if (event.body && event.body.toLowerCase() === "love you") {
  return message.reply({
- body: "𝐋𝐨𝐯𝐞 𝐲𝐨𝐮 2 𝙅𝘼𝘿𝙄𝘿☯<3💋",
+ body: "𝐋𝐨𝐯𝐞 𝐲𝐨𝐮 2 𝙅𝙄𝙎𝘼𝙉<3💋",
  attachment: await global.utils.getStreamFromURL("https://i.postimg.cc/T2mCqNpH/marin-kitagawa-anime-girl.gif")
  });
  }
