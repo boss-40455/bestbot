@@ -1,8 +1,8 @@
 module.exports = {
  config: {
-   name: "hii",
+   name: "hi",
    version: "1.0",
-   author: "Jadid",
+   author: "Jisan",
    countDown: 5,
    role: 0,
    shortDescription: "no prefix",
@@ -12,10 +12,10 @@ module.exports = {
   
  onStart: async function(){}, 
  onChat: async function({ event, message, getLang }) {
- if (event.body && event.body.toLowerCase() === "hii") {
+ if (event.body && event.body.toLowerCase() === "hi") {
  return message.reply({
- body: "𝙷𝙴𝙻𝙻𝙾 𝙸'𝙼 𝙹𝙰𝙳𝙸𝙳-𝚇-𝙱𝙾𝚃,𝙺𝙴𝙽 𝙸 𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 🤞💋",
- attachment: await global.utils.getStreamFromURL("https://i.imgur.com/wwGNFV0.jpeg")
+ body: "𝗛𝗘𝗟𝗟𝗢 𝗜'𝗠 𝗢𝗙𝗙𝗦𝗜𝗬𝗔𝗟 𝗕𝗢𝗧 𝗢𝗟𝗜𝗩𝗜𝗔 𝗖𝗔𝗛 𝗛𝗜 𝗛𝗘𝗟𝗣 𝗬𝗢𝗨 ❓",
+ attachment: await global.utils.getStreamFromURL("https://i.imgur.com/KizmOw3.jpeg")
  });
  }
  }
