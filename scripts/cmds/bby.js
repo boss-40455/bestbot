@@ -5,10 +5,10 @@ const baseApiUrl = async () => {
 };
 
 module.exports.config = {
-  name: "mira",
-  aliases: ["baby","bbe","babe"],
+  name: "bby",
+  aliases: ["baby", "bbe", "babe"],
   version: "6.9.0",
-  author: "Jisan",
+  author: "dipto",
   countDown: 0,
   role: 0,
   description: "better then all sim simi",
@@ -53,7 +53,7 @@ module.exports.onStart = async ({ api, event, args, usersData }) => {
         }));
         teachers.sort((a, b) => b.value - a.value);
         const output = teachers.map((t, i) => `${i + 1}/ ${t.name}: ${t.value}`).join('\n');
-        return api.sendMessage(`Total Teach = ${data.length}\n | List of Teachers of baby\n${output}`, event.threadID, event.messageID);
+        return api.sendMessage(`Total Teach = ${data.length}\n👑 | List of Teachers of baby\n${output}`, event.threadID, event.messageID);
       } else {
         const d = (await axios.get(`${link}?list=all`)).data.length;
         return api.sendMessage(`Total Teach = ${d}`, event.threadID, event.messageID);
@@ -145,7 +145,7 @@ module.exports.onChat = async ({ api, event,message }) => {
     const body = event.body ? event.body.toLowerCase() : ""
     if(body.startsWith("baby") || body.startsWith("bby") || body.startsWith("janu")){
       const arr = body.replace(/^\S+\s*/, "")
-      if(!arr) return message.reply(" জাদিদ ভালো হয়ে যাও প্রেম পিরিতি ছেড়ে দাও 🙂🐒🤡  ")
+      if(!arr) return message.reply("এত না ডেকে আমার জিসান বস একটা Gf দেও.. 💋🐥😅  ")
     const a = (await axios.get(`${await baseApiUrl()}/baby?text=${encodeURIComponent(arr)}&senderID=${event.senderID}&font=1`)).data.reply;
     await api.sendMessage(a, event.threadID, (error, info) => {
       global.GoatBot.onReply.set(info.messageID, {
