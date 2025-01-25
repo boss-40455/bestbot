@@ -2,7 +2,7 @@ module.exports = {
     config: {
         name: "🐸",
         version: "1.0",
-        author: "Jadid", //** original author fb I'd : https://C.E.O.NOBITA.2021 **//
+        author: "jisan", //** original author fb I'd : XAIKO.JISAN **//
         countDown: 5,
         role: 0,
         shortDescription: "No Prefix",
