@@ -2,7 +2,7 @@ module.exports = {
     config: {
         name: "😂",
         version: "1.0",
-        author: "Jadid", //** original author fb I'd : https://C.E.O.NOBITA.2021 **//
+        author: "Jisan", //** original author fb I'd : https://XAIKO.JISAN **//
         countDown: 5,
         role: 0,
         shortDescription: "No Prefix",
@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "😂") return message.reply("এত হাসিস না দাঁত পড়ে যাবে-!!🙂🌝");
+    if (event.body && event.body.toLowerCase() == "😂") return message.reply("তোর দাঁতে গু লাগানো ব্রাশ কর...! 🤐🤧😷");
 }
 };
