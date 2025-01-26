@@ -4,7 +4,7 @@ const tinyurl = require('tinyurl');
 
 module.exports = {
   config: {
-    name: "prompt",
+    name: "pr",
     aliases: [],
     version: "1.0",
     author: "Vex_Kshitiz",
