@@ -3,7 +3,7 @@ module.exports = {
 		name: "sura",//this cmd is based on Nepali users lil bit for indian users 
 		aliases: [],
 		version: "1.0",
-		author: "MR-JISAN",
+		author: "kshitiz",
 		countDown: 20,
 		role: 0,
 		shortDescription: "",
@@ -18,9 +18,10 @@ module.exports = {
 		const senderID = event.senderID;
 
 		const loadingMessage = await message.reply({
-			body: "𝗟𝗼𝗮𝗱𝗶𝗻𝗴 𝘄𝗶𝘁𝗵 𝗦𝘂𝗿𝗮... 🖤🤲",
+			body: "pizz w8 Me",
 		});
-const link = [ 
+
+		const link = [
 "https://drive.google.com/uc?id=1Ml6znasS_cajYJVS8OJ19DQO6aaLzWkc",
 
 "https://drive.google.com/uc?id=1NKyRitWSGriX3TG23YTLj0tgfySwn6Q-",
@@ -60,7 +61,7 @@ const link = [
 
     if (senderID !== null) {
       message.reply({
-        body: '𝗙𝗘𝗘𝗟 𝗧𝗛𝗔 𝗦𝗨𝗥𝗔..🤍',
+        body: 'Kub Sondor',
         attachment: await global.utils.getStreamFromURL(randomVideo),
       });
 
