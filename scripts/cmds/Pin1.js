@@ -2,7 +2,7 @@ const request = require('request');
 let start = 9;
 module.exports = {
     config: {
-        name: "pin",
+        name: "pin1",
         aliases: ["بينتريست"],
         version: "1.0",
         author: "Allou Mohamed",
