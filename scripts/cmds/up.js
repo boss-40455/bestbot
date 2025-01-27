@@ -6,7 +6,7 @@ module.exports = {
         name: "up",
         aliases: ["uptime", "upt"],
         version: "1.2",
-        author: "VEX_ADNAN",//**you needed my cmd but don't share this cmd***and original author fb I'd : https://www.facebook.com/VEX.ADNAN.404 **//
+        author: "ADNAN/JISAN",//**you needed my cmd but don't share this cmd***and original author fb I'd : https://www.facebook.com/VEX.ADNAN.404 **//
         countDown: 5,
         role: 0,
         shortDescription: {
@@ -63,7 +63,7 @@ module.exports = {
         const processMemory = prettyBytes(process.memoryUsage().rss);
 
         const a = {
-            body: `⚡ ➠ Prefix: ( ${global.GoatBot.config.prefix} )\n⏳ ➠ Bot Running: ${upSt}\n🙋 ➠ Boys: ${b}\n🙋🏼‍♀️ ➠ Girls: ${g}\n🤞🏻 ➠ Groups: ${t.length}\n🎉 ➠ Users: ${u.length}\n📡 ➠ OS: ${system}\n📱 ➠ Model: ${model}\n🛡 ➠ Cores: ${cores}`,
+            body: `❣️ ➪ 𝙋𝙧𝙚𝙛𝙞𝙭: ( ${global.GoatBot.config.prefix} )\n🕰️ ➪ 𝘽𝙤𝙩 𝙍𝙪𝙣𝙣𝙞𝙣𝙜:  ${upSt}\n🙆🏻‍♂️ ➪ 𝘽𝙤𝙮𝙨 ${b}\n🙆🏻‍♀️ ➪ 𝙂𝙞𝙧𝙡𝙨  ${g}\n🪽 ➪ 𝙂𝙧𝙤𝙪𝙥𝙨: ${t.length}\n🔗 ➪ 𝙐𝙨𝙚𝙧𝙨: ${u.length}\n⚡➪ 𝘽𝙊𝙏 𝙊𝙒𝙉𝙀𝙍: 𝙈𝙍-𝙅𝙄𝙎𝘼𝙉\n▬▬▬▬▬▬▬▬▬▬▬▬`,
             attachment: await global.utils.getStreamFromURL(iURL)
         };
 
@@ -85,4 +85,4 @@ function prettyBytes(bytes) {
         i++;
     }
     return `${bytes.toFixed(2)} ${units[i]}`;
-                }
+}
