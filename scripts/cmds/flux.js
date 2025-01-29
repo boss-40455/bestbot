@@ -1,64 +1,93 @@
 const axios = require('axios');
-const { GoatWrapper } = require('fca-liane-utils');
+const { getStreamFromURL } = global.utils;
 
 module.exports = {
   config: {
     name: "flux",
-    aliases: ["ff"],
-    version: "1.5",
-    author: "Samir/( JISAN",
-    countDown: 5,
-    role: 2,
-    shortDescription: "Image generator from Fluxpro API",
-    longDescription: "",
-    category: "ai",
+    version: "1.1",
+    author: "UPoL 🐔",
+    countDown: 0,
+    longDescription: {
+      en: "Generate stunning AI images based on your input prompt.",
+    },
+    category: "image",
+    role: 0,
     guide: {
-      en: "{pn} <prompt> --ar 1:1"
-    }
+      en: "{pn} <prompt>",
+    },
   },
 
-  onStart: async function ({ message, args }) {
-    const waitingMessages = [
-      "🎨 Creating your masterpiece...",
-      "🖌️ Painting with pixels...",
-      "🌈 Summoning colors from the digital realm...",
-      "🔮 Consulting the AI oracle...",
-      "🚀 Launching your imagination into cyberspace..."
-    ];
+  onStart: async function ({ api, event, args, message }) {
+    const prompt = args.join(' ').trim();
 
-    const randomWaitingMessage = waitingMessages[Math.floor(Math.random() * waitingMessages.length)];
-    await message.reply(randomWaitingMessage);
-
-    let prompt = args.join(" ");
-    let aspectRatio = "1:1";
-
-    // Extract aspect ratio if provided
-    const arIndex = args.indexOf("--ar");
-    if (arIndex !== -1 && args[arIndex + 1]) {
-      aspectRatio = args[arIndex + 1];
-      // Remove --ar and its value from the prompt
-      args.splice(arIndex, 2);
-      prompt = args.join(" ");
+    if (!prompt) {
+      return message.reply("⚠️ Please provide a prompt to generate an image.");
     }
 
-    try {
-      const apiUrl = `https://www.samirxpikachu.run.place/fluxpro?prompt=${encodeURIComponent(prompt)}&ratio=${aspectRatio}`;
-      const imageStream = await global.utils.getStreamFromURL(apiUrl);
+    // Send a waiting message
+    const waitingMessage = await message.reply("✨ Creating your masterpiece... Please wait a moment!");
 
-      if (!imageStream) {
-        return message.reply("❌ Oops! The image couldn't be generated. For support, Contact mfacebook.com/PriyanshiKaurJi ❤️");
+    try {
+      const apiUrl = `https://upol-flux11pro.onrender.com/fluxPro11?prompt=${encodeURIComponent(prompt)}`;
+      const response = await axios.get(apiUrl);
+      const { combinedUrl, images } = response.data;
+
+      // Validate the response structure
+      if (!combinedUrl || !images) {
+        return message.reply("❌ Failed to generate images. Please try again.");
       }
-      
-      return message.reply({
-        body: '✨ Ta-da! Here\'s your Requested Picture! 🖼️',
-        attachment: imageStream
+
+      // Send the combined image and instructions
+      const responseMessage = await message.reply(
+        {
+          body: "✨ Your image is ready! Reply with a number (1, 2, 3, or 4) to view individual images.",
+          attachment: await getStreamFromURL(combinedUrl, "combined.png"),
+        }
+      );
+
+      // Unsend the waiting message
+      api.unsendMessage(waitingMessage.messageID);
+
+      // Store reply data for further interactions
+      global.GoatBot.onReply.set(responseMessage.messageID, {
+        commandName: this.config.name,
+        messageID: responseMessage.messageID,
+        author: event.senderID,
+        images,
       });
     } catch (error) {
       console.error(error);
-      return message.reply("💔 Oh no! Something went wrong. For help, please join https://www.facebook.com/jl.jlalhjl.jlalhjl.jlalhjl.jlalhjl.jlalh.888944 🆘");
+      api.unsendMessage(waitingMessage.messageID);
+      message.reply("❌ An error occurred while generating the images. Please try again.");
     }
-  }
-};
+  },
 
-const wrapper = new GoatWrapper(module.exports);
-wrapper.applyNoPrefix({ allowPrefix: true });
+  onReply: async function ({ api, event, Reply, args, message }) {
+    const userChoice = parseInt(event.body.trim());
+    const { author, images } = Reply;
+
+    if (event.senderID !== author) {
+      return message.reply("🚫 Only the user who initiated the command can reply.");
+    }
+
+    if (isNaN(userChoice) || userChoice < 1 || userChoice > 4) {
+      return message.reply("❌ Invalid choice! Please reply with a number between 1 and 4.");
+    }
+
+    try {
+      const selectedImage = images[`image${userChoice}`];
+      if (!selectedImage) {
+        return message.reply("❌ Unable to fetch the selected image. Please try again.");
+      }
+
+      const imageStream = await getStreamFromURL(selectedImage, `image${userChoice}.png`);
+      message.reply({
+        body: `✅ Here is your selected image (${userChoice}).`,
+        attachment: imageStream,
+      });
+    } catch (error) {
+      console.error(error);
+      message.reply("❌ An error occurred while fetching the image. Please try again.");
+    }
+  },
+};
