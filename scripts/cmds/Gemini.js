@@ -1,95 +1,100 @@
-const axios = require("axios");
+const axios = require('axios');
+const Data = {};
 
 module.exports = {
-	config: {
-		name: "aryan",
-		version: "1.0",
-		author: "Dipto",
-		description:"gemeini ai",
-		countDown: 5,
-		role: 0,
-		category: "google",
-		guide: {
-			en: "{pn} message | photo reply"
-		}
-	},
-	onStart:async ({ api, args , event}) => {
-  const prompt = args.join(' ');
-  const apis =
-["AIzaSyB0dAHTjS-1J7gG1om1GszmiHN8z2rlP20",
-"AIzaSyAY9gYYYLVKEo5CdzLGE-qMwLc9sFiNYAI",
-"AIzaSyDho4C6AH4hTVkmxSrrLYiH1XduArD42Ko",
-"AIzaSyBgqgnSY2wizm3CJPe52kz_HFFfdFoMyuw",
-"AIzaSyCpxY-PLdWnPlchnRalQgFwmxJ9G4blaFg",
-"AIzaSyA1dXP05uWo6IOM8rays8pvVAXImWIjxgM"]
-//,"AIzaSyDDUItpo6erFPebw_JBu9kMw8H4gNQk31A"];
-  const apiKey = apis[Math.floor(Math.random() * apis.length)]
-//---- Image Reply -----//
-   if (event.type === "message_reply") {
-      var t = event.messageReply.attachments[0].url;
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-vision:generateContent?key=${apiKey}`;
+  config: {
+    name: "gemini",
+    version: 2.0,
+    author: "UPoL 🐔",
+    longDescription: "Google ai ",
+    category: "ai",
+    guide: {
+      en: "{p}{n} questions",
+    },
+  },
+  onStart: async function ({ args, message, event, Reply, api }) {
     try {
-      const response = await axios.get(t, { responseType: "arraybuffer" });
-  const buffer = Buffer.from(response.data, "binary");
-    const requestBody = {
-      contents: [
-        {
-          parts: [
-            { text: prompt },
-            {
-              inline_data: {
-                mime_type: 'image/jpeg',
-                data: buffer.toString("base64"),
-              }
-            }
-          ]
-        }
-      ]
-    };
-    const generationResponse = await axios.post(apiUrl, requestBody, {
-      headers: {
-        'Content-Type': 'application/json'
+      if (event.type === "message_reply" && event.messageReply.attachments && event.messageReply.attachments[0].type === "photo") {
+        const photoUrl = encodeURIComponent(event.messageReply.attachments[0].url);
+        const providingPrompt = args.join(" ");
+        const url = `https://upol-piu.onrender.com/gemini2?prompt=${encodeURIComponent(providingPrompt)}&url=${photoUrl}`;
+        const response = await axios.get(url);
+
+        message.reply(response.data.answer);
+        return;
       }
-    });
-    const gText = generationResponse.data.candidates[0].content;
-const data2 = gText.parts[0].text;// || 'No text found in the response';
-    console.log('Generated Text:', data2);
-  api.sendMessage(data2, event.threadID, event.messageID);
-  } catch (error) {
-    console.error('Error:', error.message);
-    api.sendMessage(error, event.threadID, event.messageID);
-  }
-  }
-  //---------- Message Reply ---------//
-else if(!prompt) {
-   return api.sendMessage('Please provide a prompt or message reply', event.threadID, event.messageID);}
-    else {
-  try {
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`;
-    const prompt1 = prompt+' Give answer in Bangla';
-  const data = {
-    'contents': [
-      {
-        'parts': [
-          {
-            'text': prompt1
-          }
-        ]
+
+      const prompt = args.join(' ');
+      const chat = event.senderID;
+
+      if (prompt.toLowerCase() === "reset") {
+        delete Data[chat];
+        message.reply('Successfully reset your information.');
+        return;
       }
-    ]
-  };
-  const headers = {
-    'Content-Type': 'application/json'
-  };
-    const response = await axios.post(apiUrl , data, { headers });
-    const data1 = response.data.candidates[0].content;
-    const message = data1.parts[0].text;
-  console.log(prompt1);
-    api.sendMessage(message, event.threadID,event.messageID);
+
+      if (!Data[chat]) {
+        Data[chat] = prompt;
+      } else {
+        Data[chat] += '\n' + prompt;
+      }
+
+      const encodedPrompt = encodeURIComponent(Data[chat]);
+
+      if (!encodedPrompt) {
+        return message.reply("Please provide questions");
+      }
+
+      const response = await axios.get(`https://upol-piu.onrender.com/gemini?prompt=${encodedPrompt}`);
+      const answer = response.data.answer;
+
+      message.reply({
+        body: `${answer}`,
+      }, (err, info) => {
+        global.GoatBot.onReply.set(info.messageID, {
+          commandName: this.config.name,
+          messageID: info.messageID,
+          author: event.senderID
+        });
+      });
     } catch (error) {
-      console.error('Error calling Gemini AI:', error);
-      api.sendMessage(`Sorry, there was an error processing your request.${error}`, event.threadID, event.messageID);
+      console.error("Error:", error.message);
+    }
+  },
+  onReply: async function ({ args, message, event, Reply, api }) {
+    try {
+      const prompt = args.join(' ');
+      const chat = event.senderID;
+
+      if (prompt.toLowerCase() === "reset") {
+        delete Data[chat];
+        message.reply('Successfully reset your information.');
+        return;
+      }
+
+      if (!Data[chat]) {
+        Data[chat] = prompt;
+      } else {
+        Data[chat] += '\n' + prompt;
+      }
+
+      
+      const encodedPrompt = encodeURIComponent(Data[chat]);
+
+      const response = await axios.get(`https://upol-piu.onrender.com/gemini?prompt=${encodedPrompt}`);
+      const answer = response.data.answer;
+
+      message.reply({
+        body: `${answer}`,
+      }, (err, info) => {
+        global.GoatBot.onReply.set(info.messageID, {
+          commandName: this.config.name,
+          messageID: info.messageID,
+          author: event.senderID
+        });
+      });
+    } catch (error) {
+      console.error("Error:", error.message);
+    }
   }
- }
-}
 };
