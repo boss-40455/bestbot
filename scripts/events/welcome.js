@@ -77,8 +77,7 @@ module.exports = {
 						}
 
 						// Fixed background image URL
-						const background = "https://i.imgur.com/blbx90i.jpeg',
-							"https://i.imgur.com/dDSh0wc.jpeg',";
+						const background = "https://i.imgur.com/W3I5cKP.jpeg";
 
 						// Function to get session name
 						const getSessionName = () => {
