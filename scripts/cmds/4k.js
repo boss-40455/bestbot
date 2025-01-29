@@ -22,13 +22,13 @@ module.exports = {
     const noobs = 'xyz';
     const upscaleUrl = `https://smfahim.${noobs}/4k?url=${imgurl}`;
     
-    message.reply("🔄| Processing... Please wait a moment.", async (err, info) => {
+    message.reply("🔄| 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴... 𝗣𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁 𝗮 𝗺𝗼𝗺𝗲𝗻𝘁.", async (err, info) => {
       try {
         const { data: { image } } = await axios.get(upscaleUrl);
         const attachment = await global.utils.getStreamFromURL(image, "upscaled-image.png");
 
         message.reply({
-          body: "✅| Here is your 4K upscaled image:",
+          body: "✅| 𝗛𝗲𝗿𝗲 𝗶𝘀 𝘆𝗼𝘂𝗿 4𝗞 𝘂𝗽𝘀𝗰𝗮𝗹𝗲𝗱 𝗶𝗺𝗮𝗴𝗲:",
           attachment: attachment
         });
         let processingMsgID = info.messageID;
