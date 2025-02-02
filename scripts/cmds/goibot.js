@@ -1,4 +1,4 @@
-const fs = require("fs-extra");
+.Cmd install goibot.js const fs = require("fs-extra");
 
 module.exports = {
 config: {
@@ -180,7 +180,7 @@ config: {
      return api.sendMessage("Good Night🌃, Take Care Babe🥺", threadID, messageID);
    };
 
-  if ((event.body.toLowerCase() == "bot")) {
+  if ((event.body.toLowerCase() == "robot")) {
      return api.sendMessage("But I am a Simple Messenger Chatbot, You Can Call Me MR-JISAN", threadID, messageID);
    };
 
@@ -204,7 +204,7 @@ config: {
      return api.sendMessage("Sorry, We Are Peace Lover ✌🏻🕊", threadID, messageID);
    };
 
-  if ((event.body.toLowerCase() == "Rambo") || (event.body.toLowerCase() == "Rambo") || (event.body.toLowerCase() == "Rambo")) {
+  if ((event.body.toLowerCase() == "jisan koi") || (event.body.toLowerCase() == "Jisan Koi") || (event.body.toLowerCase() == "Jisan Koi")) {
      return api.sendMessage("Amar boss ke dako kn🥺", threadID, messageID);
    };
 
@@ -220,7 +220,5 @@ config: {
     var msg = {
       body: ` ${rand}`
     }
-    return api.sendMessage(msg, threadID, messageID);
-  }
-}
+    return api.sendMessage(msg, threadID, messageID);Ra}
 };
