@@ -1,4 +1,4 @@
-.Cmd install goibot.js const fs = require("fs-extra");
+const fs = require("fs-extra");
 
 module.exports = {
 config: {
