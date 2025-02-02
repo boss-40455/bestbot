@@ -13,23 +13,23 @@ async function fetchTikTokVideos(query) {
 
 module.exports = {
   config: {
-    name: "lrvid",
+    name: "vid",
     aliases: [],
-    author: "Vex_?",
+    author: "MR-JISAN",
     version: "1.0",
     shortDescription: {
-      en: "Play a lyric video",
+      en: "Play a All video",
     },
     longDescription: {
-      en: "Search for a lyrical video based on the provided query",
+      en: "Search for a video based on the provided query",
     },
-    category: "fun",
+    category: "Video",
     guide: {
       en: "{p}{n} [query]",
     },
   },
   onStart: async function ({ api, event, args, message }) {
-    api.setMessageReaction("😽", event.messageID, (err) => {}, true);
+    api.setMessageReaction("💖", event.messageID, (err) => {}, true);
 
     try {
       let query = '';
