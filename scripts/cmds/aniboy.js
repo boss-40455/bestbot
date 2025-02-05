@@ -1,0 +1,72 @@
+module.exports = {
+	config: {
+		name: "aniboy",
+		aliases: ["aniboy4k"],
+		version: "1.0",
+		author: "MR-JISAN 👾",
+		countDown: 5,
+		role: 2,
+		shortDescription: "send you pic of anime boy 4k",
+		longDescription: "sends u pic of anime boys 4k ",
+		category: "anime",
+		guide: "{pn}"
+	},
+
+	onStart: async function ({ message }) {
+	 var link = [ 
+"https://i.imgur.com/h3F1bmZ.jpeg",
+"https://i.imgur.com/EEJz96k.jpeg",
+"https://i.imgur.com/OnJXZnJ.jpeg",
+"https://i.imgur.com/vsK2X8B.jpeg",
+"https://i.imgur.com/GHWAe2f.jpeg",
+"https://i.imgur.com/jSZshQz.jpeg",
+"https://i.imgur.com/1v5kKh9.jpeg",
+"https://i.imgur.com/8qktMHc.jpeg",
+"https://i.imgur.com/CUWOknc.jpeg",
+"https://i.imgur.com/KHyc0sO.jpeg",
+"https://i.imgur.com/VJhWWL6.jpeg",
+"https://i.imgur.com/Bg6ZTFc.jpeg",
+"https://i.imgur.com/VJhWWL6.jpeg",
+"https://i.imgur.com/WFkhR01.jpeg",
+"https://i.imgur.com/2c9LoNk.jpeg",
+"https://i.imgur.com/5vGxNAd.jpeg",
+"https://i.imgur.com/FeKFfSh.jpeg",
+"https://i.imgur.com/T0BVwI1.jpeg",
+"https://i.imgur.com/xdfrrFN.jpeg",
+"https://i.imgur.com/VLhhCsp.jpeg",
+"https://i.imgur.com/Qf4JAgw.jpeg",
+"https://i.imgur.com/4MBuAQL.jpeg",
+"https://i.imgur.com/uXVKAAn.jpeg",
+"https://i.imgur.com/xKY4Z6A.jpeg",
+"https://i.imgur.com/C4zgKCW.jpeg",
+"https://i.imgur.com/ClAgoSp.jpeg",
+"https://i.imgur.com/GvMVavl.jpeg",
+"https://i.imgur.com/Of4wLou.jpeg",
+"https://i.imgur.com/mjnZbZ5.jpeg",
+"https://i.imgur.com/K7BtLks.jpeg",
+"https://i.imgur.com/bJXwGeG.jpeg",
+"https://i.imgur.com/iVM9fcj.jpeg",
+"https://i.imgur.com/yd4JDr0.jpeg",
+"https://i.imgur.com/o5dMQjB.jpeg",
+"https://i.imgur.com/gJLfb1w.jpeg",
+"https://i.imgur.com/GTBDe65.jpeg",
+"https://i.imgur.com/Limn7K6.jpeg",
+"https://i.imgur.com/zzVgnUA.jpeg",
+"https://i.imgur.com/c8ILLi0.jpeg",
+"https://i.imgur.com/JGa3tyN.jpeg",
+"https://i.imgur.com/l4flaCA.jpeg",
+"https://i.imgur.com/LsUFXGx.jpeg",
+"https://i.imgur.com/FIKGg5A.jpeg",
+"https://i.imgur.com/eam5MsD.jpeg",
+"https://i.imgur.com/B0fHBbb.jpeg",
+"https://i.imgur.com/UksHAoF.jpeg",
+"https://i.imgur.com/MoYSepa.jpeg",
+"https://i.imgur.com/xXS429K.jpeg",
+"https://i.imgur.com/nF0QMaw.jpeg",
+]
+let img = link[Math.floor(Math.random()*link.length)]
+message.send({
+  body: '4𝗸 𝗥𝗮𝗻𝗱𝗼𝗺 𝗯𝗼𝘆 𝗔𝗻𝗶𝗺𝗲 ✅',attachment: await global.utils.getStreamFromURL(img)
+})
+}
+}
