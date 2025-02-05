@@ -1,64 +1,57 @@
 const axios = require('axios');
+const UPoLPrefix = [
+  '-ai',
+  'ai',
+  '/ai',
+  '',
+  'ask'
+]; 
 
-const Prefixes = [
-  'ai'
-];
-
-module.exports = {
+  module.exports = {
   config: {
     name: 'ai',
-    version: '2.5',
-    author: 'JV Barcenas | ncs pro', // do not change
+    version: '1.2.1',
     role: 0,
-    category: 'ai',
-    shortDescription: {
-      en: 'Asks gemini AI for an answer.',
-    },
-    longDescription: {
-      en: 'Asks gemini AI for an answer based on the user prompt.',
-    },
-    guide: {
-      en: '{pn} [prompt]',
-    },
+    category: 'AI',
+    author: 'ncs pro',
+    shortDescription: '',
+    longDescription: '',
   },
+  
   onStart: async function () {},
-  onChat: async function ({ api, event, args, message }) {
-    try {
-      const prefix = Prefixes.find((p) => event.body && event.body.toLowerCase().startsWith(p));
-
-      if (!prefix) {
+  onChat: async function ({ message, event, args, api, threadID, messageID }) {
+      
+      const ahprefix = UPoLPrefix.find((p) => event.body && event.body.toLowerCase().startsWith(p));
+      if (!ahprefix) {
         return; 
-      }
-
-      const prompt = event.body.substring(prefix.length).trim();
-
-      if (prompt === '') {
-        await message.reply(
-          "Hello I'm Jisan how can I help you dear 🖤."
-        );
+      } 
+      
+     const upol = event.body.substring(ahprefix.length).trim();
+   if (!upol) {
+        await message.reply('Enter a question.? 🥹');
         return;
       }
+      
+      const apply = ['Awww🥹, maybe you need my help', 'How can i help you?', 'How can i assist you today?', 'How can i help you?🙂'];
+      
+     const randomapply = apply[Math.floor(Math.random() * apply.length)];
 
-
-      await message.reply("Jisan answering your question. Please wait a moment 🍁...");
-
-      const response = await axios.get(`https://hercai.onrender.com/GEMINI/hercai?question=${encodeURIComponent(prompt)}`);
-
-      if (response.status !== 200 || !response.data) {
-        throw new Error('Invalid or missing response from API');
+     
+      if (args[0] === 'hi') {
+          message.reply(`${randomapply}`);
+          return;
       }
+      
+    const encodedPrompt = encodeURIComponent(args.join(" "));
 
-      const messageText = response.data.reply;
+   await message.reply('princes  thinking..');
+  
+    const response = await axios.get(`https://sandipbaruwal.onrender.com/gemini?prompt=${encodedPrompt}`);
+ 
+     const UPoL = response.data.answer; 
 
-      await message.reply(messageText);
-
-      console.log('Sent answer as a reply to user');
-    } catch (error) {
-      console.error(`Failed to get answer: ${error.message}`);
-      api.sendMessage(
-        `${error.message}.\ou can try typing your question again or resending it, as there might be a bug from the server that's causing the problem. It might resolve the issue.`,
-        event.threadID
-      );
-    }
-  },
+      const upolres = `${UPoL}`;
+      
+        message.reply(upolres);
+  }
 };
