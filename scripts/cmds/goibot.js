@@ -1,5 +1,4 @@
 const fs = require("fs-extra");
-
 module.exports = {
 config: {
     name: "goibot",
@@ -204,7 +203,7 @@ config: {
      return api.sendMessage("Sorry, We Are Peace Lover ✌🏻🕊", threadID, messageID);
    };
 
-  if ((event.body.toLowerCase() == "jisan koi") || (event.body.toLowerCase() == "Jisan Koi") || (event.body.toLowerCase() == "Jisan Koi")) {
+  if ((event.body.toLowerCase() == "admin") || (event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "admin ke")) {
      return api.sendMessage("Amar boss ke dako kn🥺", threadID, messageID);
    };
 
@@ -220,5 +219,7 @@ config: {
     var msg = {
       body: ` ${rand}`
     }
-    return api.sendMessage(msg, threadID, messageID);Ra}
+    return api.sendMessage(msg, threadID, messageID);
+  }
+}
 };
