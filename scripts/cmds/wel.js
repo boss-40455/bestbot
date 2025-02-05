@@ -1,226 +1,71 @@
+const fs = require("fs");
+const { writeFileSync } = require("fs-extra");
 const { config } = global.GoatBot;
 
+
 module.exports = {
-
-	config: {
-
-		name: "wl",
-
-		version: "1.0",
-
-		author: "Jisan--",
-
-		countDown: 5,
-
-		role: 2,
-
-		longDescription: {
-
-			en: "Add, remove, edit whiteListIds"
-
-		},
-
-		category: "owner",
-
-		guide: {
-
-			en: '   {pn} [add | -a] <uid | @tag>: Add admin role for user'
-
-				+ '\n   {pn} [remove | -r] <uid | @tag>: Remove admin role of user'
-
-				+ '\n   {pn} [list | -l]: List all admins'
-
-        + '\n   {pn} [ on | off ]: enable and disable whiteList mode'
-
-		}
-
-	},
-
-
-	langs: {
-
-		en: {
-
-			added: "✅ | Added whiteList role for %1 users:\n%2",
-
-			alreadyAdmin: "\n⚠ | %1 users already have whiteList role:\n%2",
-
-			missingIdAdd: "⚠ | Please enter ID or tag user to add in whiteListIds",
-
-			removed: "✅ | Removed whiteList role of %1 users:\n%2",
-
-			notAdmin: "⚠ | %1 users don't have whiteListIds role:\n%2",
-
-			missingIdRemove: "⚠ | Please enter ID or tag user to remove whiteListIds",
-
-			listAdmin: "👑 | List of whiteListIds:\n%1",
-
-      enable: "✅ Turned on",
-
-      disable: "✅ Turned off"
-
-		}
-
-	},
-
-
-	onStart: async function ({ message, args, usersData, event, getLang, api }) {
-
-    const { writeFileSync } = require("fs-extra");
-
-		switch (args[0]) {
-
-			case "add":
-
-			case "-a": {
-
-				if (args[1]) {
-
-					let uids = [];
-
-					if (Object.keys(event.mentions).length > 0)
-
-						uids = Object.keys(event.mentions);
-
-					else if (event.messageReply)
-
-						uids.push(event.messageReply.senderID);
-
-					else
-
-						uids = args.filter(arg => !isNaN(arg));
-
-					const notAdminIds = [];
-
-					const adminIds = [];
-
-					for (const uid of uids) {
-
-						if (config.whiteListMode.whiteListIds.includes(uid))
-
-							adminIds.push(uid);
-
-						else
-
-							notAdminIds.push(uid);
-
-					}
-
-
-					config.whiteListMode.whiteListIds.push(...notAdminIds);
-
-					const getNames = await Promise.all(uids.map(uid => usersData.getName(uid).then(name => ({ uid, name }))));
-
-					writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
-
-					return message.reply(
-
-						(notAdminIds.length > 0 ? getLang("added", notAdminIds.length, getNames.map(({ uid, name }) => `• ${name} (${uid})`).join("\n")) : "")
-
-						+ (adminIds.length > 0 ? getLang("alreadyAdmin", adminIds.length, adminIds.map(uid => `• ${uid}`).join("\n")) : "")
-
-					);
-
-				}
-
-				else
-
-					return message.reply(getLang("missingIdAdd"));
-
-			}
-
-			case "remove":
-
-			case "-r": {
-
-				if (args[1]) {
-
-					let uids = [];
-
-					if (Object.keys(event.mentions).length > 0)
-
-						uids = Object.keys(event.mentions)[0];
-
-					else
-
-						uids = args.filter(arg => !isNaN(arg));
-
-					const notAdminIds = [];
-
-					const adminIds = [];
-
-					for (const uid of uids) {
-
-						if (config.whiteListMode.whiteListIds.includes(uid))
-
-							adminIds.push(uid);
-
-						else
-
-							notAdminIds.push(uid);
-
-					}
-
-					for (const uid of adminIds)
-
-						config.whiteListMode.whiteListIds.splice(config.whiteListMode.whiteListIds.indexOf(uid), 1);
-
-					const getNames = await Promise.all(adminIds.map(uid => usersData.getName(uid).then(name => ({ uid, name }))));
-
-					writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
-
-					return message.reply(
-
-						(adminIds.length > 0 ? getLang("removed", adminIds.length, getNames.map(({ uid, name }) => `• ${name} (${uid})`).join("\n")) : "")
-
-						+ (notAdminIds.length > 0 ? getLang("notAdmin", notAdminIds.length, notAdminIds.map(uid => `• ${uid}`).join("\n")) : "")
-
-					);
-
-				}
-
-				else
-
-					return message.reply(getLang("missingIdRemove"));
-
-			}
-
-			case "list":
-
-			case "-l": {
-
-				const getNames = await Promise.all(config.whiteListMode.whiteListIds.map(uid => usersData.getName(uid).then(name => ({ uid, name }))));
-
-				return message.reply(getLang("listAdmin", getNames.map(({ uid, name }) => `• ${name} (${uid})`).join("\n")));
-
-			}
-
-        case "on": {              
-
-   config.whiteListMode.enable = true;
-
-                writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
-
-                return message.reply(getLang("enable"))
-
-            }
-
-            case "off": {
-
-   config.whiteListMode.enable = false;
-
-                writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
-
-                return message.reply(getLang("disable"))
-
-            }
-
-            default:
-
-                return message.SyntaxError();
-
-        }
-
-    }
-
+    config: {
+        name: "wl",
+        version: "1.3",
+        author: "UPoL/JISAN",
+        role: 2,
+        description: "Manage whiteList users",
+        category: "system",
+        usage: "{pn} [add/remove/list/on/off] [@tag/reply/uid]"
+    },
+
+    onStart: async function ({ message, args, usersData, event }) {
+        let uids = [];
+
+        if (Object.keys(event.mentions).length > 0) {
+            uids = Object.keys(event.mentions);
+        } else if (event.messageReply) {
+            uids.push(event.messageReply.senderID);
+        } else {
+            uids = args.filter(arg => !isNaN(arg));
+        }
+
+        if (["add", "-a"].includes(args[0])) {
+            if (uids.length === 0) return message.reply(" Tag, reply, or enter a user ID to add.");
+            
+            const notAdded = uids.filter(uid => !config.whiteListMode.whiteListIds.includes(uid));
+            config.whiteListMode.whiteListIds.push(...notAdded);
+            writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
+
+            const names = await Promise.all(notAdded.map(uid => usersData.getName(uid)));
+            return message.reply(` ✅ 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹 𝗔𝗱𝗱𝗲𝗱 𝘁𝗼 𝘄𝗵𝗶𝘁𝗲𝗹𝗶𝘀𝘁:\n\n${names.map((name, i) => `• ${name} (${notAdded[i]})`).join("\n")}`);
+        } 
+
+        else if (["remove", "-r"].includes(args[0])) {
+            if (uids.length === 0) return message.reply("Tag, reply, or enter a user ID to remove.");
+            
+            const toRemove = uids.filter(uid => config.whiteListMode.whiteListIds.includes(uid));
+            config.whiteListMode.whiteListIds = config.whiteListMode.whiteListIds.filter(uid => !toRemove.includes(uid));
+            writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
+
+            const names = await Promise.all(toRemove.map(uid => usersData.getName(uid)));
+            return message.reply(` ✅ 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹 𝗥𝗲𝗺𝗼𝘃𝗲𝗱 𝗳𝗿𝗼𝗺 𝘄𝗵𝗶𝘁𝗲𝗹𝗶𝘀𝘁:\n\n${names.map((name, i) => `• ${name} (${toRemove[i]})`).join("\n")}`);
+        } 
+
+        else if (["list", "-l"].includes(args[0])) {
+            const names = await Promise.all(config.whiteListMode.whiteListIds.map(uid => usersData.getName(uid)));
+            return message.reply(`🎀 | 𝗪𝗵𝗶𝘁𝗲𝗹𝗶𝘀𝘁𝗲𝗱 𝗨𝘀𝗲𝗿𝘀:\n${names.map((name, i) => `• ${name} (${config.whiteListMode.whiteListIds[i]})`).join("\n")}`);
+        } 
+
+        else if (args[0] === "on") {
+            config.whiteListMode.enable = true;
+            writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
+            return message.reply("𝗪𝗵𝗶𝘁𝗲𝗹𝗶𝘀𝘁 𝗺𝗼𝗱𝗲 𝗲𝗻𝗮𝗯𝗹𝗲𝗱 ✅.");
+        } 
+
+        else if (args[0] === "off") {
+            config.whiteListMode.enable = false;
+            writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
+            return message.reply(" 𝗪𝗵𝗶𝘁𝗲𝗹𝗶𝘀𝘁 𝗺𝗼𝗱𝗲 𝗱𝗶𝘀𝗮𝗯𝗹𝗲𝗱 📴.");
+        } 
+
+        else {
+            return message.reply("⚠ | Invalid command! Use  list to see whitelisted users.");
+        }
+    }
 };
