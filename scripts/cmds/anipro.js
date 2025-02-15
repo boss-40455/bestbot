@@ -1,4 +1,4 @@
-.Cmd install anipro.js module.exports = {
+module.exports = {
 	config: {
 		name: "anipro",//this cmd is based on Nepali users lil bit for indian users 
 		aliases: [],
